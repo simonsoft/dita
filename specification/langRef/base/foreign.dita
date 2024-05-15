@@ -2,11 +2,9 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="foreign" xml:lang="en-us">
 <title><xmlelement>foreign</xmlelement></title>
-  <abstract>
-    <shortdesc>Foreign content is non-DITA content, such as MathML, SVG, or Rich Text Format
-      (RTF).</shortdesc>
-    <!--<shortdesc>The <xmlelement>foreign</xmlelement> element enables the inclusion of non-DITA content, such as MathML, SVG, or Rich Text Format (RTF).</shortdesc>-->
-  </abstract>
+  <shortdesc>Foreign content is non-DITA content, such as MathML, SVG, or Rich Text Format
+    (RTF).</shortdesc>
+  <!--<shortdesc>The <xmlelement>foreign</xmlelement> element enables the inclusion of non-DITA content, such as MathML, SVG, or Rich Text Format (RTF).</shortdesc>-->
 <prolog><metadata>
 <keywords>
         <indexterm>specialization
