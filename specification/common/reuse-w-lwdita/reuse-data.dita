@@ -24,7 +24,7 @@
           only for properties; do not use it to embed text as part of the content flow. </note>
       </div>
       <div platform="lwdita">
-        <p>A metadata property specified using a <xmlelement>data</xmlelement>component usually
+        <p>A metadata property specified using a <xmlelement>data</xmlelement> component usually
           applies to the structure that contains the <xmlelement>data</xmlelement> component. </p>
         <note type="caution">By default, processors do not render the content of the
             <xmlelement>data</xmlelement> component. Use the <xmlelement>data</xmlelement> component
