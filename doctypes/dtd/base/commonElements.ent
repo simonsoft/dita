@@ -34,7 +34,6 @@
 <!--                    ELEMENT NAME ENTITIES                      -->
 <!-- ============================================================= -->
 <!ENTITY % data        "data"                                        >
-<!ENTITY % unknown     "unknown"                                     >
 <!ENTITY % foreign     "foreign"                                     >
 <!ENTITY % title       "title"                                       >
 <!ENTITY % titlealt    "titlealt"                                    >
