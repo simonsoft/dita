@@ -18,7 +18,15 @@
             </sthead>
             <strow>
               <stentry><xmlelement>boolean</xmlelement></stentry>
+              <stentry>Specialized <xmlelement>data</xmlelement> element if used for metadata, or
+                specialized <xmlelement>ph</xmlelement> or <xmlelement>keyword</xmlelement> if used
+                for document content</stentry>
+            </strow>
+            <strow>
               <stentry><xmlelement>state</xmlelement></stentry>
+              <stentry>Specialized <xmlelement>data</xmlelement> element if used for metadata, or
+                specialized <xmlelement>ph</xmlelement> or <xmlelement>keyword</xmlelement> if used
+                for document content</stentry>
             </strow>
             <strow>
               <stentry><xmlelement>data-about</xmlelement></stentry>
@@ -52,6 +60,10 @@
               <stentry><xmlelement>titlealts</xmlelement></stentry>
               <stentry><xmlelement>titlealt</xmlelement> (alternative
                 titles domain)</stentry>
+            </strow>
+            <strow>
+              <stentry><xmlelement>unknown</xmlelement></stentry>
+              <stentry><xmlelement>foreign</xmlelement></stentry>
             </strow>
           </simpletable></dd>
       </dlentry>

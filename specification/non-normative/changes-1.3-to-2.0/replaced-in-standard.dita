@@ -28,8 +28,15 @@
                     
                         <strow>
                             <stentry><xmlelement>boolean</xmlelement></stentry>
-                            <stentry><xmlelement>state value="yes|no"</xmlelement></stentry>
-                        </strow> <strow>
+                            <stentry><codeph>&lt;data name="boolean" value="yes|no"></codeph> or
+                            <codeph>&lt;ph outputclass="boolean">yes|no&lt;/ph></codeph></stentry>
+                        </strow>
+                <strow>
+                    <stentry><xmlelement>state</xmlelement></stentry>
+                    <stentry><codeph>&lt;data name="state-name" value="state-value"></codeph> or
+                            <codeph>&lt;ph
+                        outputclass="state-name">state-value&lt;/ph></codeph></stentry>
+                </strow> <strow>
                             <stentry><xmlelement>index-sort-as</xmlelement></stentry>
                             <stentry><xmlelement>sort-as</xmlelement></stentry>
                         </strow>
@@ -53,6 +60,10 @@
                                 domain. See <xref href="added-to-standard.dita"/> for more
                                 information.</stentry>
                         </strow>
+                <strow>
+                    <stentry><xmlelement>unknown</xmlelement></stentry>
+                    <stentry><xmlelement>foreign</xmlelement></stentry>
+                </strow>
                     
                 
             </simpletable>

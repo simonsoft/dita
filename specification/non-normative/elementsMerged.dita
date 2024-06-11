@@ -654,13 +654,6 @@
           <stentry/>
         </strow>
         <strow>
-          <stentry><xmlelement>state</xmlelement></stentry>
-          <stentry>inline</stentry>
-          <stentry>yes</stentry>
-          <stentry><xmlatt>value</xmlatt> can specify translatable
-            content.</stentry>
-        </strow>
-        <strow>
           <stentry><xmlelement>stentry</xmlelement></stentry>
           <stentry>block</stentry>
           <stentry>yes</stentry>
