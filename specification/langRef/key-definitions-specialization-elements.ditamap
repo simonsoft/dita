@@ -5,5 +5,4 @@
  <keydef href="base/data.dita" keys="elements-data"/>
  <keydef href="base/foreign.dita" keys="elements-foreign"/>
  <keydef href="base/no-topic-nesting.dita" keys="elements-no-topic-nesting"/>
- <keydef href="base/state.dita" keys="elements-state"/>
 </map>

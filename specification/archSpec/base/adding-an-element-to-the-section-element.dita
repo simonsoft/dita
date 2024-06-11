@@ -99,7 +99,6 @@
 &lt;!ENTITY % text "text">
 &lt;!ENTITY % tm "tm">
 &lt;!ENTITY % xref "xref">
-&lt;!ENTITY % state "state">
 &lt;!ENTITY % data "data">
 &lt;!ENTITY % foreign "foreign">
 &lt;!ENTITY % title "title">
@@ -137,7 +136,6 @@
                %text; |
                %tm; |
                %xref; |
-               %state; |
                %data; |
                %foreign; |
                %title; |
