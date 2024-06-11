@@ -536,7 +536,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Map//EN"
                          (%resourceid;)*,
                          (%ux-window;)*,
                          (%data.elements.incl; |
-                          %foreign.unknown.incl;)*)"
+                          %foreign;)*)"
 >
 <!ENTITY % topicmeta.attributes
               "%univ-atts;"

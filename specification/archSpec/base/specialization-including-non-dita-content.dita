@@ -4,7 +4,7 @@
   <title>Specializing to include non-DITA content</title>
   <shortdesc>You can extend DITA to incorporate standard vocabularies for non-textual content, such
     as MathML and SVG, as markup within DITA documents. This is done by specializing the
-      <xmlelement>foreign</xmlelement> or <xmlelement>unknown</xmlelement> elements.</shortdesc>
+      <xmlelement>foreign</xmlelement> element.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -20,20 +20,17 @@
     <section id="foreign-methods">
       <p>There are three methods of incorporating foreign content into DITA. </p>
       <ul>
-        <li>A domain specialization of the <xmlelement>foreign</xmlelement> or
-            <xmlelement>unknown</xmlelement> element. This is the usual implementation.</li>
-        <li>A structural specialization using the
-            <xmlelement>foreign</xmlelement> or
-            <xmlelement>unknown</xmlelement> element. This affords more
-          control over the content <ph rev="review-p">model</ph>.</li>
-        <li>Directly embedding the non-DITA content within <xmlelement>foreign</xmlelement> or
-            <xmlelement>unknown</xmlelement> elements. If the non-DITA content has interoperability
-          or vocabulary naming issues such as those that are addressed by specialization in DITA,
-          they must be addressed by means that are appropriate to the non-DITA content.</li>
+        <li>A domain specialization of the <xmlelement>foreign</xmlelement> element. This is the
+          usual implementation.</li>
+        <li>A structural specialization using the <xmlelement>foreign</xmlelement> element. This
+          affords more control over the content <ph rev="review-p">model</ph>.</li>
+        <li>Directly embedding the non-DITA content within <xmlelement>foreign</xmlelement> element.
+          If the non-DITA content has interoperability or vocabulary naming issues such as those
+          that are addressed by specialization in DITA, they must be addressed by means that are
+          appropriate to the non-DITA content.</li>
       </ul>
-      <p>Do not use <xmlelement>foreign</xmlelement> or
-          <xmlelement>unknown</xmlelement> elements to include textual
-        content or metadata in DITA
+      <p>Do not use <xmlelement>foreign</xmlelement> element to include textual content or metadata
+        in DITA
         documents.<!--, except where such content acts as an example or display, rather than as the primary content of a topic.--></p>
     </section>
     <example id="example-svgDomain"  otherprops="examples">

@@ -746,13 +746,6 @@
           <stentry/>
         </strow>
         <strow>
-          <stentry><xmlelement>unknown</xmlelement>
-          </stentry>
-          <stentry>block</stentry>
-          <stentry>no</stentry>
-          <stentry/>
-        </strow>
-        <strow>
           <stentry><xmlelement>video</xmlelement></stentry>
           <stentry>block</stentry>
           <stentry>yes</stentry>

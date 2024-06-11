@@ -222,14 +222,6 @@
             <entry>No</entry>
           </row>
           <row>
-            <entry colname="col1"><xmlelement>unknown</xmlelement></entry>
-            <entry colname="col2">Add to the topic</entry>
-            <entry colname="COLSPEC0">No, unless specialized for a purpose
-              that cascades</entry>
-            <entry colname="COLSPEC1">No stated purpose</entry>
-            <entry>No</entry>
-          </row>
-          <row>
             <entry colname="col1"
               ><xmlelement>ux-window</xmlelement></entry>
             <entry colname="col2">Not added to the topic</entry>

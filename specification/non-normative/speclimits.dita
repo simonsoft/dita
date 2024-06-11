@@ -32,7 +32,7 @@
         <li>Providing attributes required by specific processors, such as CMS-defined attributes for
           maintaining management metadata</li>
         <li>Embedding tool-imposed markup in places that do not allow the
-            <xmlelement>foreign</xmlelement> or <xmlelement>unknown</xmlelement> elements</li>
+            <xmlelement>foreign</xmlelement> element</li>
       </ul></p>
     <p>Remember that customized document types do not conform to the DITA standard, and thus are not
       considered DITA. In many of the cases above, it is possible to define document types that
@@ -183,14 +183,9 @@
           </dlentry>
           <dlentry>
             <dt><xmlelement>foreign</xmlelement></dt>
-            <dd>Any content that already has a non-DITA markup standard, but still needs to be
+            <dd>Any content that already has a non-DITA markup definition, but still needs to be
               authored as part of the DITA document. Processors should attempt to render this
               element, if at all possible. </dd>
-          </dlentry>
-          <dlentry>
-            <dt><xmlelement>unknown</xmlelement></dt>
-            <dd>Any non-standard markup that does not fit the DITA model, but needs to be managed as
-              part of a DITA document. Processors should not attempt to render this element.</dd>
           </dlentry>
           <dlentry>
             <dt><xmlelement>bodydiv</xmlelement></dt>

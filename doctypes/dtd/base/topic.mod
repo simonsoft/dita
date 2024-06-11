@@ -118,7 +118,7 @@
                %basic.block; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %shortdesc; |
                %txt.incl;"
 >
@@ -126,7 +126,7 @@
               "%basic.block; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup;"
 >
 <!ENTITY % bodydiv.cnt
@@ -134,7 +134,7 @@
                %basic.block; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % section.cnt
@@ -142,7 +142,7 @@
                %basic.block; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %title; |
                %txt.incl;"
 >
@@ -151,7 +151,7 @@
                %basic.block; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % relational-atts
@@ -301,7 +301,7 @@
                          (%metadata;)*,
                          (%resourceid;)*,
                          (%data.elements.incl; |
-                          %foreign.unknown.incl;)*)"
+                          %foreign;)*)"
 >
 <!ENTITY % prolog.attributes
               "%univ-atts;"

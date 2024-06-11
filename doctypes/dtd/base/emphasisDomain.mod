@@ -43,7 +43,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % strong.attributes
@@ -62,7 +62,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % em.attributes

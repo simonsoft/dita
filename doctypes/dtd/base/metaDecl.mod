@@ -248,7 +248,7 @@
                          (%prodinfo;)*,
                          (%othermeta;)*,
                          (%data.elements.incl; |
-                          %foreign.unknown.incl;)*)"
+                          %foreign;)*)"
 >
 <!ENTITY % metadata.attributes
               "%univ-atts;"

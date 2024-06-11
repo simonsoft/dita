@@ -50,7 +50,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % b.attributes
@@ -69,7 +69,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % u.attributes
@@ -88,7 +88,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % i.attributes
@@ -107,7 +107,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % line-through.attributes
@@ -126,7 +126,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % overline.attributes
@@ -145,7 +145,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % tt.attributes
@@ -164,7 +164,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % sup.attributes
@@ -183,7 +183,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % sub.attributes

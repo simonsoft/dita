@@ -61,7 +61,7 @@
       &lt;xs:group ref="basic.ph.notm"/&gt;
       &lt;xs:group ref="data.elements.incl"/&gt;
       &lt;xs:group ref="draft-comment"/&gt;
-      &lt;xs:group ref="foreign.unknown.incl"/&gt;
+      &lt;xs:group ref="foreign"/&gt;
       &lt;xs:group ref="required-cleanup"/&gt;
     &lt;/xs:choice&gt;
   &lt;/xs:sequence&gt;
