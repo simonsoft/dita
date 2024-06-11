@@ -68,9 +68,9 @@
             However, the new element is not added to the content model for
               <xmlelement>section</xmlelement>.</p></li>
         <li>Next, the DITA architect creates an expansion module:
-            <filepath>acme-SectionExpansion.mod</filepath>. This module
-          adds the <xmlelement>sectionDesc</xmlelement> element to the
-          content model of <xmlelement>section</xmlelement>.<codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+            <filepath>acme-SectionExpansion.mod</filepath>. This module adds the
+            <xmlelement>sectionDesc</xmlelement> element to the content model of
+            <xmlelement>section</xmlelement>.<codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
 
 &lt;!-- Declares the entities referenced in the modified content  -->
 &lt;!-- model.                                                    -->
@@ -102,7 +102,6 @@
 &lt;!ENTITY % state "state">
 &lt;!ENTITY % data "data">
 &lt;!ENTITY % foreign "foreign">
-&lt;!ENTITY % unknown "unknown">
 &lt;!ENTITY % title "title">
 &lt;!ENTITY % draft-comment "draft-comment">
 &lt;!ENTITY % fn "fn">
@@ -141,7 +140,6 @@
                %state; |
                %data; |
                %foreign; |
-               %unknown; |
                %title; |
                %draft-comment; |
                %fn; |
@@ -149,15 +147,12 @@
                %required-cleanup; |
                <b>%sectionDesc;</b>)*"
 ></codeblock>
-          <p>Note that the DITA architect needed to explicitly declare all
-            the elements, rather than using the
-              <parameterentity>section.cnt</parameterentity> parameter
-            entity that is used in the definition of
-              <xmlelement>section</xmlelement>. Because the
-            element-configuration modules are integrated into the
-            document-type shell before the base grammar modules, none of
-            the parameter entities that are used in the base DITA
-            vocabulary modules are available.</p></li>
+          <p>Note that the DITA architect needed to explicitly declare all the elements, rather than
+            using the <parameterentity>section.cnt</parameterentity> parameter entity that is used
+            in the definition of <xmlelement>section</xmlelement>. Because the element-configuration
+            modules are integrated into the document-type shell before the base grammar modules,
+            none of the parameter entities that are used in the base DITA vocabulary modules are
+            available.</p></li>
         <li>Finally, the DITA architect integrates the expansion module
           into the document-type
           shell:<codeblock>&lt;!-- ============================================================= -->
