@@ -55,8 +55,7 @@
                %term; |
                %text; |
                %tm; |
-               %xref; |
-               %state;"
+               %xref;"
 >
 <!ENTITY % basic.block
               "%audio; |
@@ -88,8 +87,7 @@
                %q; |
                %term; |
                %text; |
-               %tm; |
-               %state;"
+               %tm;"
 >
 <!ENTITY % basic.ph.noxref
               "%basic.ph.noxref.nocite; |
@@ -103,8 +101,7 @@
                %q; |
                %term; |
                %text; |
-               %xref; |
-               %state;"
+               %xref;"
 >
 <!ENTITY % basic.block.notbl
               "%audio; |
@@ -1091,23 +1088,6 @@
 <!ELEMENT  tm %tm.content;>
 <!ATTLIST  tm %tm.attributes;>
 
-<!--                    LONG NAME: State                           -->
-<!ENTITY % state.content
-                       "EMPTY"
->
-<!ENTITY % state.attributes
-              "name
-                          CDATA
-                                    #REQUIRED
-               value
-                          CDATA
-                                    #REQUIRED
-               %univ-atts;"
->
-<!ELEMENT  state %state.content;>
-<!ATTLIST  state %state.attributes;>
-
-
 <!--                    LONG NAME: Image Data                      -->
 <!ENTITY % image.content
                        "((%alt;)?,
@@ -1782,7 +1762,6 @@
 <!ATTLIST  simpletable    class CDATA "- topic/simpletable ">
 <!ATTLIST  sl             class CDATA "- topic/sl "         >
 <!ATTLIST  sli            class CDATA "- topic/sli "        >
-<!ATTLIST  state          class CDATA "- topic/state "      >
 <!ATTLIST  stentry        class CDATA "- topic/stentry "    >
 <!ATTLIST  sthead         class CDATA "- topic/sthead "     >
 <!ATTLIST  strow          class CDATA "- topic/strow "      >

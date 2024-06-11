@@ -192,9 +192,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
     <define name="simpletable">
       <ref name="simpletable.element"/>
     </define>
-    <define name="state">
-      <ref name="state.element"/>
-    </define>
     <define name="stentry">
       <ref name="stentry.element"/>
     </define>
@@ -352,7 +349,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="text"/>
           <ref name="tm"/>
           <ref name="xref"/>
-          <ref name="state"/>
         </choice>
       </define>
       <define name="basic.block">
@@ -394,7 +390,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="term"/>
           <ref name="text"/>
           <ref name="tm"/>
-          <ref name="state"/>
         </choice>
       </define>
       <define name="basic.ph.noxref">
@@ -413,7 +408,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="term"/>
           <ref name="text"/>
           <ref name="xref"/>
-          <ref name="state"/>
         </choice>
       </define>
       <define name="basic.block.notbl">
@@ -1984,28 +1978,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
 
       </div>
       <div>
-        <a:documentation xml:space="preserve">LONG NAME: State</a:documentation>
-        <define name="state.content">
-          <empty/>
-        </define>
-        <define name="state.attributes">
-          <attribute name="name"/>
-          <attribute name="value"/>
-          <ref name="univ-atts"/>
-        </define>
-        <define name="state.element">
-          <element name="state" dita:longName="State">
-            <a:documentation></a:documentation>
-            <ref name="state.attlist"/>
-            <ref name="state.content"/>
-          </element>
-        </define>
-        <define name="state.attlist" combine="interleave">
-          <ref name="state.attributes"/>
-        </define>
-
-      </div>
-      <div>
         <a:documentation>LONG NAME: Image</a:documentation>
         <define name="image.content">
           <optional>
@@ -3281,11 +3253,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
     <define name="sli.attlist" combine="interleave">
       <optional>
         <attribute name="class" a:defaultValue="- topic/sli "/>
-      </optional>
-    </define>
-    <define name="state.attlist" combine="interleave">
-      <optional>
-        <attribute name="class" a:defaultValue="- topic/state "/>
       </optional>
     </define>
     <define name="stentry.attlist" combine="interleave">
