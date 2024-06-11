@@ -81,7 +81,7 @@
             <ref name="basic.ph"/>
             <ref name="data.elements.incl"/>
             <ref name="draft-comment"/>
-            <ref name="foreign.unknown.incl"/>
+            <ref name="foreign"/>
             <ref name="required-cleanup"/>
           </choice>
         </zeroOrMore>
@@ -112,7 +112,7 @@
             <ref name="basic.ph"/>
             <ref name="data.elements.incl"/>
             <ref name="draft-comment"/>
-            <ref name="foreign.unknown.incl"/>
+            <ref name="foreign"/>
             <ref name="required-cleanup"/>
           </choice>
         </zeroOrMore>

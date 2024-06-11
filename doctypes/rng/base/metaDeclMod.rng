@@ -419,7 +419,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Metadata//EN"
         <zeroOrMore>
           <choice>
             <ref name="data.elements.incl"/>
-            <ref name="foreign.unknown.incl"/>
+            <ref name="foreign"/>
           </choice>
         </zeroOrMore>
       </define>

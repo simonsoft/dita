@@ -126,7 +126,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Topic//EN"
         <ref name="basic.block"/>
         <ref name="basic.ph"/>
         <ref name="data.elements.incl"/>
-        <ref name="foreign.unknown.incl"/>
+        <ref name="foreign"/>
         <ref name="shortdesc"/>
         <ref name="txt.incl"/>
       </choice>
@@ -136,7 +136,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Topic//EN"
         <ref name="basic.block"/>
         <ref name="data.elements.incl"/>
         <ref name="draft-comment"/>
-        <ref name="foreign.unknown.incl"/>
+        <ref name="foreign"/>
         <ref name="required-cleanup"/>
       </choice>
     </define>
@@ -147,7 +147,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Topic//EN"
         <ref name="basic.block"/>
         <ref name="basic.ph"/>
         <ref name="data.elements.incl"/>
-        <ref name="foreign.unknown.incl"/>
+        <ref name="foreign"/>
         <ref name="txt.incl"/>
       </choice>
     </define>
@@ -157,7 +157,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Topic//EN"
         <ref name="basic.block"/>
         <ref name="basic.ph"/>
         <ref name="data.elements.incl"/>
-        <ref name="foreign.unknown.incl"/>
+        <ref name="foreign"/>
         <ref name="title"/>
         <ref name="txt.incl"/>
       </choice>
@@ -168,7 +168,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Topic//EN"
         <ref name="basic.block"/>
         <ref name="basic.ph"/>
         <ref name="data.elements.incl"/>
-        <ref name="foreign.unknown.incl"/>
+        <ref name="foreign"/>
         <ref name="txt.incl"/>
       </choice>
     </define>
@@ -461,7 +461,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Topic//EN"
           <zeroOrMore>
             <choice>
               <ref name="data.elements.incl"/>
-              <ref name="foreign.unknown.incl"/>
+              <ref name="foreign"/>
             </choice>
           </zeroOrMore>
         </define>
