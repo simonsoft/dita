@@ -7,7 +7,7 @@
   <topicref href="dita-linking.dita">
    <topicref keyref="attributes-format"/>
    <topicref keyref="attributes-href"/>
-   <topicref keyref="attributes-keyref"/>
+   <topicref keyref="attributes-scope"/>
    <topicref keyref="attributes-type"/>
   </topicref>
   <topicref href="uri-based-addressing.dita"/>
