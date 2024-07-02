@@ -1195,7 +1195,7 @@
             the element that cannot be changed or deleted by authors.</dd>
         </dlentry>
         <dlentry id="xmlnsditaarch" platform="dita lwdita">
-          <dt id="attr-xmlns-ditaarch"><xmlatt>xmlns:ditaarch</xmlatt>
+          <dt id="attr-xmlnsditaarch"><xmlatt>xmlns:ditaarch</xmlatt>
             <ph otherprops="attr-list-label">(architectural
               attributes)</ph></dt>
           <dd>Declares the default DITA namespace. This namespace is

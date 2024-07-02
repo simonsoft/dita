@@ -339,8 +339,8 @@
                 needed to be aware of.</p>
             </draft-comment></dd>
         </dlentry>
-        <dlentry id="xml-lang">
-          <dt id="attr-xml-lang"><xmlatt>xml:lang</xmlatt></dt>
+        <dlentry id="xmllang">
+          <dt id="attr-xmllang"><xmlatt>xml:lang</xmlatt></dt>
           <dd id="reusable-lang">Specifies the language and optional locale of the content that is
             contained in an element. Valid values are language tokens or the null string. The
               <xmlatt>xml:lang</xmlatt> attribute and its values are described in the <xref
