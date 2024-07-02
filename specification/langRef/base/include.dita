@@ -48,12 +48,12 @@ contents of the referenced resource at the location of the <xmlelement>include</
 If the content is unavailable to the processor or cannot be processed using the specified
 <xmlatt>parse</xmlatt> value, the contents of the <xmlelement>fallback</xmlelement> element, if any,
 are presented instead.</p>
-            <p>Processors <term outputclass="RFC-2119">SHOULD</term>
-        support the <xmlatt>parse</xmlatt> values <keyword>text</keyword>
-        and  <keyword>xml</keyword>.</p>
+            <p>Processors <term outputclass="RFC-2119">SHOULD</term> support the <xref
+                    keyref="attributes-common/attr-parse"><xmlatt>parse</xmlatt></xref> values
+                    <keyword>text</keyword> and <keyword>xml</keyword>.</p>
 <p>Processors <term outputclass="RFC-2119">SHOULD</term> detect the encoding of the referenced
                 document based on the rules described for the <xref
-                    keyref="attributes-common/encoding"><xmlatt>encoding</xmlatt></xref>
+                    keyref="attributes-common/attr-encoding"><xmlatt>encoding</xmlatt></xref>
                 attribute.</p>
         </section>
         <section id="attributes">

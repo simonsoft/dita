@@ -6,83 +6,83 @@
     <refbody>
         <section id="attributelist">
             <sl>
-                <sli><xref keyref="attributes-common/align"/></sli>
-                <sli><xref keyref="attributes-universal/audience"/></sli>
+                <sli><xref keyref="attributes-common/attr-align"/></sli>
+                <sli><xref keyref="attributes-universal/attr-audience"/></sli>
                 <sli><xref keyref="elements-draft-comment/author"/></sli>
-                <sli><xref keyref="attributes-universal/base"/></sli>
+                <sli><xref keyref="attributes-universal/attr-base"/></sli>
                 <sli><xmlatt>callout</xmlatt></sli>
-                <sli><xref keyref="attributes-common/cascade"/></sli>
-                <sli><xref keyref="attributes-common/char"/></sli>
-                <sli><xref keyref="attributes-common/charoff"/></sli>
-                <sli><xref keyref="attributes-common/chunk"/></sli>
-                <sli><xref keyref="attributes-universal/class">class</xref></sli>
-                <sli><xref keyref="attributes-common/collection-type"/></sli>
-                <sli><xref keyref="attributes-common/colsep"/></sli>
-                <sli><xref keyref="attributes-common/compact"/></sli>
+                <sli><xref keyref="attributes-common/attr-cascade"/></sli>
+                <sli><xref keyref="attributes-common/attr-char"/></sli>
+                <sli><xref keyref="attributes-common/attr-charoff"/></sli>
+                <sli><xref keyref="attributes-common/attr-chunk"/></sli>
+                <sli><xref keyref="attributes-universal/attr-class">class</xref></sli>
+                <sli><xref keyref="attributes-common/attr-collection-type"/></sli>
+                <sli><xref keyref="attributes-common/attr-colsep"/></sli>
+                <sli><xref keyref="attributes-common/attr-compact"/></sli>
                 <sli><xref keyref="attributes-universal/attr-conaction"/></sli>
                 <sli><xref keyref="attributes-universal/attr-conkeyref"/></sli>
                 <sli><xref keyref="attributes-universal/attr-conref"/></sli>
                 <sli><xref keyref="attributes-universal/attr-conrefend"/></sli>
-                <sli><xref keyref="attributes-common/datatype"/></sli>
-                <sli><xref keyref="attributes-universal/deliveryTarget"/></sli>
-                <sli><xref keyref="attributes-universal/dir"/></sli>
+                <sli><xref keyref="attributes-common/attr-datatype"/></sli>
+                <sli><xref keyref="attributes-universal/attr-deliveryTarget"/></sli>
+                <sli><xref keyref="attributes-universal/attr-dir"/></sli>
                 <sli><xref keyref="elements-draft-comment/disposition"/></sli>
-                <sli><xref keyref="attributes-common/DITAArchVersion"/></sli>
+                <sli><xref keyref="attributes-common/attr-DITAArchVersion"/></sli>
                 <sli><xref keyref="elements-indexterm/start"/><xref keyref="elements-indexterm/end"
                     /></sli>
-                <sli><xref keyref="attributes-common/encoding"/></sli>
-                <sli><xref keyref="attributes-common/expanse"/></sli>
-                <sli><xref keyref="attributes-common/expiry"/></sli>
+                <sli><xref keyref="attributes-common/attr-encoding"/></sli>
+                <sli><xref keyref="attributes-common/attr-expanse"/></sli>
+                <sli><xref keyref="attributes-common/attr-expiry"/></sli>
                 <sli><xref keyref="attributes-common/attr-format"/></sli>
-                <sli><xref keyref="attributes-common/frame"/></sli>
-                <sli><xref keyref="attributes-common/golive"/></sli>
+                <sli><xref keyref="attributes-common/attr-frame"/></sli>
+                <sli><xref keyref="attributes-common/attr-golive"/></sli>
                 <sli><xref keyref="attributes-common/attr-href"/></sli>
-                <sli><xref keyref="attributes-universal/id"/></sli>
+                <sli><xref keyref="attributes-universal/attr-id"/></sli>
                 <!--<sli><xref keyref="elements-topic/topic-id"><xmlatt>id</xmlatt> on <xmlelement>topic</xmlelement></xref></sli>-->
-                <sli><xref keyref="attributes-universal/importance"/></sli>
-                <sli><xref keyref="attributes-common/keycol"/></sli>
-                <sli><xref keyref="attributes-common/keyref"/></sli>
+                <sli><xref keyref="attributes-universal/attr-importance"/></sli>
+                <sli><xref keyref="attributes-common/attr-keycol"/></sli>
+                <sli><xref keyref="attributes-common/attr-keyref"/></sli>
                 <sli><xref keyref="attributes-common/attr-keyref"/></sli>
                 <sli><xref keyref="attributes-common/attr-keys"/></sli>
                 <sli><xref keyref="attributes-common/attr-keyscope"/></sli>
-                <sli><xref keyref="attributes-common/linking"/></sli>
-                <sli><xref keyref="attributes-common/name"/></sli>
-                <sli><xref keyref="attributes-universal/otherprops"/></sli>
-                <sli><xref keyref="attributes-universal/outputclass"/></sli>
-                <sli><xref keyref="attributes-common/parse"/></sli>
-                <sli><xref keyref="attributes-universal/platform"/></sli>
-                <sli><xref keyref="attributes-common/processing-role"/></sli>
-                <sli><xref keyref="attributes-universal/product"/></sli>
-                <sli><xref keyref="attributes-universal/props"/></sli>
-                <sli><xref keyref="attributes-common/relcolwidth"/></sli>
-                <sli><xref keyref="attributes-universal/rev"/></sli>
+                <sli><xref keyref="attributes-common/attr-linking"/></sli>
+                <sli><xref keyref="attributes-common/attr-name"/></sli>
+                <sli><xref keyref="attributes-universal/attr-otherprops"/></sli>
+                <sli><xref keyref="attributes-universal/attr-outputclass"/></sli>
+                <sli><xref keyref="attributes-common/attr-parse"/></sli>
+                <sli><xref keyref="attributes-universal/attr-platform"/></sli>
+                <sli><xref keyref="attributes-common/attr-processing-role"/></sli>
+                <sli><xref keyref="attributes-universal/attr-product"/></sli>
+                <sli><xref keyref="attributes-universal/attr-props"/></sli>
+                <sli><xref keyref="attributes-common/attr-relcolwidth"/></sli>
+                <sli><xref keyref="attributes-universal/attr-rev"/></sli>
                 <sli><xref keyref="attributes-common/attr-role"/></sli>
                 <sli><xref keyref="attributes-common/attr-otherrole"/></sli>
-                <sli><xref keyref="attributes-common/rowheader"/></sli>
-                <sli><xref keyref="attributes-common/rowsep"/></sli>
-                <sli><xref keyref="attributes-common/scale"/></sli>
-                <sli><xref keyref="attributes-common/scope"/></sli>
+                <sli><xref keyref="attributes-common/attr-rowheader"/></sli>
+                <sli><xref keyref="attributes-common/attr-rowsep"/></sli>
+                <sli><xref keyref="attributes-common/attr-scale"/></sli>
                 <sli><xref keyref="attributes-common/attr-scope"/></sli>
-                <sli><xref keyref="attributes-common/search"/></sli>
-                <sli><xref keyref="attributes-common/specializations"/></sli>
+                <sli><xref keyref="attributes-common/attr-scope"/></sli>
+                <sli><xref keyref="attributes-common/attr-search"/></sli>
+                <sli><xref keyref="attributes-common/attr-specializations"/></sli>
                 <sli><xref keyref="elements-indexterm/start"/></sli>
-                <sli><xref keyref="attributes-universal/status"/></sli>
+                <sli><xref keyref="attributes-universal/attr-status"/></sli>
                 <sli><xref keyref="elements-draft-comment/time"/></sli>
-                <sli><xref keyref="attributes-common/toc"/></sli>
+                <sli><xref keyref="attributes-common/attr-toc"/></sli>
                 <sli><xmlatt>type</xmlatt></sli>
             </sl>
             <sl>
                 <sli><xref keyref="attributes-common/attr-type"/></sli>
-                <sli><xref keyref="elements-hazardstatement/type"><xmlatt>type</xmlatt> on
+                <sli><xref keyref="elements-hazardstatement/attr-type"><xmlatt>type</xmlatt> on
                             <xmlelement>hazardstatement</xmlelement></xref></sli>
             </sl>
             <sl>
-                <sli><xref keyref="attributes-universal/translate"/></sli>
-                <sli><xref keyref="attributes-common/valign"/></sli>
-                <sli><xref keyref="attributes-common/value"/></sli>
-                <sli><xref keyref="attributes-universal/xmllang"/></sli>
-                <sli><xref keyref="attributes-common/xmlnsditaarch"/></sli>
-                <sli><xref keyref="attributes-common/xmlspace"/></sli>
+                <sli><xref keyref="attributes-universal/attr-translate"/></sli>
+                <sli><xref keyref="attributes-common/attr-valign"/></sli>
+                <sli><xref keyref="attributes-common/attr-value"/></sli>
+                <sli><xref keyref="attributes-universal/attr-xmllang"/></sli>
+                <sli><xref keyref="attributes-common/attr-xmlnsditaarch"/></sli>
+                <sli><xref keyref="attributes-common/attr-xmlspace"/></sli>
             </sl>
         </section>
     </refbody>
