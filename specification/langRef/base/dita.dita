@@ -18,7 +18,7 @@
     <section id="attributes">
       <title>Attributes</title>
       <p>The following attributes are available on this element: <xref
-          keyref="attributes-common/attr-xmlns-ditaarch"><xmlatt>xmlns:ditaarch</xmlatt></xref>,
+          keyref="attributes-common/attr-xmlnsditaarch"><xmlatt>xmlns:ditaarch</xmlatt></xref>,
           <xref keyref="attributes-common/attr-DITAArchVersion"
           ><xmlatt>DITAArchVersion</xmlatt></xref>, and <ph conkeyref="reuse-attributes/ref-localizationatts"/>.</p>
     </section>

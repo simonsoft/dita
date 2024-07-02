@@ -80,7 +80,7 @@
                 <sli><xref keyref="attributes-universal/translate"/></sli>
                 <sli><xref keyref="attributes-common/valign"/></sli>
                 <sli><xref keyref="attributes-common/value"/></sli>
-                <sli><xref keyref="attributes-universal/xml-lang"/></sli>
+                <sli><xref keyref="attributes-universal/xmllang"/></sli>
                 <sli><xref keyref="attributes-common/xmlnsditaarch"/></sli>
                 <sli><xref keyref="attributes-common/xmlspace"/></sli>
             </sl>
