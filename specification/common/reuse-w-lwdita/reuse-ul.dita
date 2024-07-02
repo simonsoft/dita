@@ -9,7 +9,7 @@
       <title>Attributes</title>
       <p platform="dita">The following attributes are available on this element: <ph
           conkeyref="reuse-attributes/ref-universalatts"/> and <xref
-          keyref="attributes-common/compact"><xmlatt>compact</xmlatt></xref>.</p>
+          keyref="attributes-common/attr-compact"><xmlatt>compact</xmlatt></xref>.</p>
       <div conkeyref="reuse-lwdita-attributes/block-elements"
         platform="lwdita"/>
     </section>
