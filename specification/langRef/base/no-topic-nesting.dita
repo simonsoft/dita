@@ -24,7 +24,7 @@
     <section id="attributes">
       <title>Attributes</title>
       <p>The following attribute is available on this element: <xref
-                    keyref="attributes-universal/class"><xmlatt>class</xmlatt></xref>.</p>
+                    keyref="attributes-universal/attr-class"><xmlatt>class</xmlatt></xref>.</p>
     </section>
 <example id="example" otherprops="examples">
             <title>Example</title>

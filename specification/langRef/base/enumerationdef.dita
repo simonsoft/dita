@@ -117,8 +117,8 @@
             <p>The following attributes are available on this element: <ph
           conkeyref="reuse-attributes/ref-idandconrefatts"/>, <xref
           keyref="attributes-universal/attr-base"><xmlatt>base</xmlatt></xref>, <xref
-          keyref="attributes-universal/class"><xmlatt>class</xmlatt></xref>, <xref
-          keyref="attributes-universal/outputclass"><xmlatt>outputclass</xmlatt></xref>, and <xref
+          keyref="attributes-universal/attr-class"><xmlatt>class</xmlatt></xref>, <xref
+          keyref="attributes-universal/attr-outputclass"><xmlatt>outputclass</xmlatt></xref>, and <xref
           keyref="attributes-universal/attr-status"><xmlatt>status</xmlatt></xref>.</p>
         </section>
         <example>
