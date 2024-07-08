@@ -115,23 +115,19 @@
     &lt;stentry>$7.00&lt;/stentry>
   &lt;/strow>
 <b>&lt;/simpletable></b></codeblock>
-      </fig>
-      <p>This simple table might be <ph rev="review-e">rendered in the
-          following way:</ph></p>
-      <image placement="break" href="../images/simpletable-w-keycols.jpg">
-        <alt>The image shows a three-column table. The first column lists
-          menu items, the second column lists calories, and the third
-          column lists price. The header row is shaded with green, and the
-          text in the header row is bold. In addition, the contents of the
-          first column are highlighted in bold, to indicate that the first
-          column serves as a vertical header. The edges of the screen
-          capture are tattered, to indicate that the image is part of a
-          larger document.</alt>
-      </image>
-      <p><ph rev="review-e">In the sample rendering, the content of the key
-          column is highlighted with bold formatting.</ph> However, note
-        that rendering of the key column is left up to the
-        implementation.</p>
-      <!--<simpletable keycol="1"><sthead><stentry>Menu item</stentry><stentry>Calories</stentry><stentry>Price</stentry></sthead><strow><stentry>Chicken dish</stentry><stentry>850</stentry><stentry>$12.00</stentry></strow><strow><stentry>Vegetarian dish</stentry><stentry>525</stentry><stentry>$9.00</stentry></strow><strow><stentry>Vegan dish</stentry><stentry>475</stentry><stentry>$7.00</stentry></strow></simpletable>--></example>
+        <p>This simple table might be <ph rev="review-e">rendered in the following way:</ph></p>
+        <image placement="break" href="../images/simpletable-w-keycols.jpg" id="image_apg_2k4_zbc">
+          <alt>The image shows a three-column table. The first column lists menu items, the second
+            column lists calories, and the third column lists price. The header row is shaded with
+            green, and the text in the header row is bold. In addition, the contents of the first
+            column are highlighted in bold, to indicate that the first column serves as a vertical
+            header. The edges of the screen capture are tattered, to indicate that the image is part
+            of a larger document.</alt>
+        </image>
+        <p><ph rev="review-e">In the sample rendering, the content of the key column is highlighted
+            with bold formatting.</ph> However, note that rendering of the key column is left up to
+          the implementation.</p>
+        <!--<simpletable keycol="1"><sthead><stentry>Menu item</stentry><stentry>Calories</stentry><stentry>Price</stentry></sthead><strow><stentry>Chicken dish</stentry><stentry>850</stentry><stentry>$12.00</stentry></strow><strow><stentry>Vegetarian dish</stentry><stentry>525</stentry><stentry>$9.00</stentry></strow><strow><stentry>Vegan dish</stentry><stentry>475</stentry><stentry>$7.00</stentry></strow></simpletable>-->
+      </fig></example>
 </refbody>
 </reference>
