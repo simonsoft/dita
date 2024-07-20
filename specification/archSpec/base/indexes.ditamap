@@ -3,6 +3,7 @@
 <map>
     <title>Indexes</title>
     <topicref href="indexes.dita">
+        <topicref href="index-overview.dita"/>
         <topicref href="index-elements.dita"/>
         <topicref href="location-of-indexterm-elements.dita"/>
         <topicref href="index-page-references.dita"/>
