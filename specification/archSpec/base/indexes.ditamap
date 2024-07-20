@@ -10,7 +10,6 @@
         <topicref href="index-redirection.dita"/>
         <topicref href="index-ranges.dita"/>
         <topicref href="index-sorting.dita"/>
-        <topicref href="merging-index-elements.dita"/>
         <topicref href="examples-indexing.dita">
             <topicref href="example-of-nested-indexterm-elements.dita"/>
             <topicref href="example-index-range-in-a-single-topic.dita"/>
