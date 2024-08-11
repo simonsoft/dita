@@ -7,38 +7,49 @@
     <body>
         <draft-comment author="rodaande">Placeholder for definition of "index" and "generated
             index", as used within the DITA specification</draft-comment>
+    <draft-comment author="Kristen J Eberlein">Info gathered from review
+        comments:<p>A generated index is a human-readable mapping of index
+        terms to rendered locations.</p></draft-comment>
         <p>While DITA provides several elements that support indexing, how those elements are used
             will vary by implementation.</p>
-        <ul id="ul_vmb_tw3_1cc">
-            <li>A publishing format like PDF might use a back-of-the-book style index with page
-                numbers, which typically involves merging index elements and rendering with page
-                numbers.</li>
-            <li>Another publishing format might have no rendered index at all, but instead use the
-                index element content to help weight search results.</li>
-            <li>Some implementations might choose to supplement a generated index with additional
-                content, such as treating a specialized <xmlelement>keyword</xmlelement> element as
-                both normal content and an index entry.</li>
-            <li>Implementations might have different ways to render indexing edge cases, based on
-                either implementation capabilities or style preferences.</li>
-        </ul>
-        <p>While DITA itself defines markup for indexing and specifies exactly what point an index
-            term refers to, it cannot force DITA documents to use consistent patterns that work for
-            all formats. Implementations should consider what edge cases are relevant and how to
-            treat them when rendering.</p>
-        <p>The following list includes some of the conditions that implementations might want to be
-            aware of when considering how to generate an index:<ul id="ul_pxb_wdj_1cc">
-                <li>Index procssors typically ignore leading or trailing whitespace characters.</li>
-                <li>Processors might want to treat two entries separately if they are defined with
-                    different cases.</li>
-                <li>Processors need to determine how to handle nested markup, such as
-                        <xmlelement>keyword</xmlelement>, within an index entry.</li>
-                <li>Because <xmlelement>index-see</xmlelement> is used to refer to a term that is
-                    used <i>instead of</i> the current entry, processors should consider how to
-                    handle a case where an index term is used as a page locater but is also used
-                    with an <xmlelement>index-see</xmlelement> for redirection.</li>
-                <li>Similarly, processors should consider how to handle a case where an index term
-                    is defined with both an <xmlelement>index-see</xmlelement> and an
-                        <xmlelement>index-see-also</xmlelement>.</li>
-            </ul></p>
+        <ul>
+      <li>A publishing format like PDF might use a back-of-the-book style
+        index with page numbers, which typically involves merging index
+        elements and rendering with page numbers.</li>
+      <li>Another publishing format might have no rendered index at all,
+        but instead use the index element content to help weight search
+        results.</li>
+      <li>Some implementations might choose to supplement a generated index
+        with additional content, such as treating a specialized
+          <xmlelement>keyword</xmlelement> element as both normal content
+        and an index entry.</li>
+      <li>Implementations might have different ways to render indexing edge
+        cases, based on either implementation capabilities or style
+        preferences.</li>
+    </ul>
+        <p>While DITA itself defines markup for indexing and specifies
+      exactly what point an <xmlelement>indexterm</xmlelement> refers to,
+      it cannot force DITA documents to use consistent patterns that work
+      for all formats. Implementations should consider what edge cases are
+      relevant and how to treat them when rendering.</p>
+        <p>The following list includes some of the conditions that
+      implementations might want to be aware of when considering how to
+      generate an index:<ul>
+        <li>Index processors typically ignore leading or trailing
+          whitespace characters.</li>
+        <li>Processors might want to treat two entries separately if they
+          are defined with different cases.</li>
+        <li>Processors need to determine how to handle nested markup, such
+          as <xmlelement>keyword</xmlelement>, within an index entry.</li>
+        <li>Because <xmlelement>index-see</xmlelement> is used to refer to
+          a term that is used <i>instead of</i> the current entry,
+          processors should consider how to handle a case where an index
+          term is used both as a page locator and with an
+            <xmlelement>index-see</xmlelement> for redirection.</li>
+        <li>Similarly, processors should consider how to handle a case
+          where an index term is defined with both an
+            <xmlelement>index-see</xmlelement> and an
+            <xmlelement>index-see-also</xmlelement> element.</li>
+      </ul></p>
     </body>
 </topic>

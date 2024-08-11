@@ -2,8 +2,8 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="indexingdgroup" xml:lang="en-us">
 <title>Indexing elements</title>
-<shortdesc>The indexing elements provide content that a processor can use to generate an
-        index.</shortdesc>
+<shortdesc>The indexing elements provide content that a processor can use
+    to generate <ph rev="review-chenier">indexes</ph>.</shortdesc>
     <prolog>
         <metadata>
             <keywords>

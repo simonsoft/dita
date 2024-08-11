@@ -20,8 +20,9 @@
   &lt;!-- ... -->
 &lt;/map></codeblock>
         <p>The information developer wants an index entry that will span
-                <filepath>acct.dita</filepath> and its children. He uses the following markup in
-                <filepath>acct.dita</filepath>:</p>
+        <filepath>acct.dita</filepath> and its children. <ph
+        rev="review-chenier">They use </ph>the following markup in
+        <filepath>acct.dita</filepath>:</p>
         <codeblock>&lt;topic id="accounting-at-acme">
   &lt;title>Accounting at Acme&lt;/title>
   &lt;prolog>

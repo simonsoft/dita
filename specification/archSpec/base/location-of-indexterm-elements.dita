@@ -21,10 +21,10 @@
   &lt;/topicmeta> 
 ... 
 &lt;/map></codeblock></draft-comment>-->
-        <p>The location of an <xmlelement>indexterm</xmlelement> element determines where the
-                <xmlelement>indexterm</xmlelement> element points to, and where an
-                <xmlelement>indexterm</xmlelement> element points to determines the locators that
-            are rendered in a generated index.</p>
+    <p rev="review-chenier">The location of an
+        <xmlelement>indexterm</xmlelement> element determines the point in
+      the document that the element references.</p>
+    <!--<p>The location of an <xmlelement>indexterm</xmlelement> element determines where the <xmlelement>indexterm</xmlelement> element points to, and where an <xmlelement>indexterm</xmlelement> element points to determines the locators that are rendered in a generated index.</p>-->
         <dl>
             <dlentry>
                 <dt>Topic prologs</dt>
@@ -41,13 +41,15 @@
             </dlentry>
             <dlentry>
                 <dt>DITA maps</dt>
-                <dd>An <xmlelement>indexterm</xmlelement> element that is contained by a
-                        <xmlelement>topicref</xmlelement> element is a point reference to the title
-                    of the topic. <ph rev="review-1">If an <xmlelement>indexterm</xmlelement>
-                        element has an <xmlatt>end</xmlatt> attribute, it is a point reference to
-                        the end of the topic. If the topic reference is not bound to a resource, the
-                            <xmlelement>indexterm</xmlelement> element has no stated
-                    purpose.</ph></dd>
+                <dd>An <xmlelement>indexterm</xmlelement> element that is
+          contained <ph rev="review-chenier">within</ph> a
+            <xmlelement>topicref</xmlelement> element is a point reference
+          to the title of the topic. <ph rev="review-1">If an
+              <xmlelement>indexterm</xmlelement> element has an
+              <xmlatt>end</xmlatt> attribute, it is a point reference to
+            the end of the topic. If the topic reference is not bound to a
+            resource, the <xmlelement>indexterm</xmlelement> element has no
+            stated purpose.</ph></dd>
             </dlentry>
         </dl>
     </conbody>

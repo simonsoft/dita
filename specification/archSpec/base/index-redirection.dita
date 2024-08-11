@@ -2,8 +2,10 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="index-redirection">
     <title>Index redirection</title>
-    <shortdesc>The <xmlelement>index-see</xmlelement> and <xmlelement>index-see-also</xmlelement>
-        elements enable redirection to other index entries within the generated index.</shortdesc>
+    <shortdesc>The <xmlelement>index-see</xmlelement> and
+      <xmlelement>index-see-also</xmlelement> elements enable redirection
+    to other index entries within <ph rev="review-chenier">a</ph> generated
+    index.</shortdesc>
     <prolog>
         <metadata>
             <keywords>

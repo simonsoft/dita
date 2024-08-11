@@ -20,7 +20,7 @@
   &lt;topicref href="pineapples.dita">
     &lt;topicmeta>
       &lt;keywords>
-        &lt;indexterm start="acme-fruit"/>
+        &lt;indexterm <ph rev="review-chenier">end</ph>="acme-fruit"/>
       &lt;/keywords>
     &lt;/topicmeta>
   &lt;/topicref>
@@ -30,14 +30,7 @@
                 <filepath>apples.dita</filepath>, and it continues until the end of the last element
             in <filepath>pineapples.dita</filepath>. If an end element was not specified, the range
             would continue to the end of the map.</p>
-    <draft-comment author="Eliot Kimber" time="09 August 2019">I think this should be a reportable
-      error or warning since it's almost certainly not the author's intent for a range to span to
-      the end of the publication.</draft-comment>
-    <draft-comment author="Kristen J Eberlein" time="13 August 2019">
-      <p>Eliot, I disagree. If the map is a submap that is consumed by a larger publication (for
-        example, a map of examples of using keys), I think the default range boundary of "end of the
-        map" might be entirely appropriate.</p>
-      <!--<p>Also, this is example is stating behavior about ranges defined in maps that we do not lay out in <xref href="index-ranges.dita"/> – in particular, that the presence of an end element in a map signifies that the end-of-the-range is the <b>end</b> of the topic that contains the end element. This makes good sense to me, but it conflicts with the usual expectation that an <xmlelement>indexterm</xmlelement> element in a map (or prolog) is a point reference to the start of the topic title.</p>-->
-    </draft-comment>
+    <!--<draft-comment author="Eliot Kimber" time="09 August 2019">I think this should be a reportable error or warning since it's almost certainly not the author's intent for a range to span to the end of the publication.</draft-comment>-->
+    <!--<draft-comment author="Kristen J Eberlein" time="13 August 2019"><p>Eliot, I disagree. If the map is a submap that is consumed by a larger publication (for example, a map of examples of using keys), I think the default range boundary of "end of the map" might be entirely appropriate.</p><!-\-<p>Also, this is example is stating behavior about ranges defined in maps that we do not lay out in <xref href="index-ranges.dita"/> – in particular, that the presence of an end element in a map signifies that the end-of-the-range is the <b>end</b> of the topic that contains the end element. This makes good sense to me, but it conflicts with the usual expectation that an <xmlelement>indexterm</xmlelement> element in a map (or prolog) is a point reference to the start of the topic title.</p>-\-></draft-comment>-->
     </conbody>
 </concept>
