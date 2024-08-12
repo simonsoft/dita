@@ -5,11 +5,14 @@
     <shortdesc>DITA provides several elements to enable indexing. Whether and how an index is
         rendered will vary based on implementation decisions and rendering formats.</shortdesc>
     <body>
-        <draft-comment author="rodaande">Placeholder for definition of "index" and "generated
-            index", as used within the DITA specification</draft-comment>
-    <draft-comment author="Kristen J Eberlein">Info gathered from review
-        comments:<p>A generated index is a human-readable mapping of index
-        terms to rendered locations.</p></draft-comment>
+    <p>Here are some definitions:</p>
+    <ul>
+      <li>An <term>index</term> is a mapping from
+          <xmlelement>indexterm</xmlelement> elements to locations in the
+        DITA content.</li>
+      <li>a <term>generated index</term> is a human-readable mapping of
+        index terms to rendered locations.</li>
+    </ul>
         <p>While DITA provides several elements that support indexing, how those elements are used
             will vary by implementation.</p>
         <ul>
