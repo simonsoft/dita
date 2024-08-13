@@ -12,26 +12,17 @@
         </metadata>
     </prolog>
     <conbody>
-        <!--<draft-comment author="Kristen J Eberlein" time="09 August 2019"><p>Comment by Eliot Kimber:</p><p>Doesn't cover the case of index entries in map metadata where the index terms are not bound to any resource, i.e.: </p><codeblock>&lt;map> 
-  &lt;title>Reuse With Relationship Tables&lt;/title> 
-  &lt;topicmeta> 
-    &lt;keywords> 
-      &lt;indexterm>a term&lt;/indexterm>
-    &lt;/keywords> 
-  &lt;/topicmeta> 
-... 
-&lt;/map></codeblock></draft-comment>-->
-        <p>The location of an <xmlelement>indexterm</xmlelement> element determines where the
-                <xmlelement>indexterm</xmlelement> element points to, and where an
-                <xmlelement>indexterm</xmlelement> element points to determines the locators that
-            are rendered in a generated index.</p>
+    <p rev="review-chenier">The location of an
+        <xmlelement>indexterm</xmlelement> element determines the point in
+      the document that the element references.</p>
         <dl>
             <dlentry>
                 <dt>Topic prologs</dt>
                 <dd>An <xmlelement>indexterm</xmlelement> element that is located in a topic prolog
                     is a point reference to the title of the topic. <ph rev="review-1">If an
                             <xmlelement>indexterm</xmlelement> element has an <xmlatt>end</xmlatt>
-                        attribute, it is a point reference to the end of the topic.</ph></dd>
+                        attribute, it is a point reference to the <ph rev="review-chenier">end of
+                            the topic, including any sub-topics</ph>.</ph></dd>
             </dlentry>
             <dlentry rev="review-1">
                 <dt>Anywhere else in a DITA topic</dt>
@@ -41,13 +32,17 @@
             </dlentry>
             <dlentry>
                 <dt>DITA maps</dt>
-                <dd>An <xmlelement>indexterm</xmlelement> element that is contained by a
-                        <xmlelement>topicref</xmlelement> element is a point reference to the title
-                    of the topic. <ph rev="review-1">If an <xmlelement>indexterm</xmlelement>
-                        element has an <xmlatt>end</xmlatt> attribute, it is a point reference to
-                        the end of the topic. If the topic reference is not bound to a resource, the
-                            <xmlelement>indexterm</xmlelement> element has no stated
-                    purpose.</ph></dd>
+                <dd>An <xmlelement>indexterm</xmlelement> element that is
+          contained <ph rev="review-chenier">within</ph> a
+            <xmlelement>topicref</xmlelement> element is a point reference
+          to the title of the topic. <ph rev="review-1">If an
+              <xmlelement>indexterm</xmlelement> element has an
+              <xmlatt>end</xmlatt> attribute, it is a point reference to
+            the <ph rev="review-chenier">end of the branch that is
+              specified by the topic reference</ph>. If the topic reference
+            is not bound to a resource, the
+              <xmlelement>indexterm</xmlelement> element has no stated
+            purpose.</ph></dd>
             </dlentry>
         </dl>
     </conbody>

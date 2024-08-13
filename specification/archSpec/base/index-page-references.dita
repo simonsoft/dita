@@ -2,8 +2,10 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="index-page-references">
     <title>Index locators</title>
-    <shortdesc>Typically, an <xmlelement>indexterm</xmlelement> element instructs a processor to
-        generate an index entry with a locator.</shortdesc>
+    <shortdesc>An <xmlelement>indexterm</xmlelement> element <ph
+      rev="review-chenier">binds the content of the element, typically a
+      term or subject, to a specific location in a
+    document.</ph></shortdesc>
     <prolog>
         <metadata>
             <keywords>
@@ -12,19 +14,21 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>The nesting of <xmlelement>indexterm</xmlelement> elements and the presence of
-                <xmlelement>index-see</xmlelement> elements determines whether locators are rendered
-            in the generated index entries:</p>
+        <p>The nesting of <xmlelement>indexterm</xmlelement> elements and
+      the presence of <xmlelement>index-see</xmlelement> elements
+      determines whether locators are rendered in generated <ph
+        rev="review-chenier">indexes</ph>:</p>
         <ul>
             <li>An <xmlelement>indexterm</xmlelement> element that does not contain child
                     <xmlelement>indexterm</xmlelement> elements (or an
                     <xmlelement>index-see</xmlelement> element) contributes a locator to the
                 generated index entry.</li>
-            <li>An <xmlelement>indexterm</xmlelement> element that contains child
-                    <xmlelement>indexterm</xmlelement> elements contributes to the hierarchy of the
-                multilevel index entry that is generated. Only the final nested
-                    <xmlelement>indexterm</xmlelement> element contributes a locator to the
-                generated index entry.</li>
+            <li>An <xmlelement>indexterm</xmlelement> element that contains
+        child <xmlelement>indexterm</xmlelement> elements contributes to
+        the hierarchy of the multilevel index entry that is generated. Only
+        a <ph rev="review-chenier">leaf</ph>
+        <xmlelement>indexterm</xmlelement> element contributes a locator to
+        the generated index entry.</li>
             <li>If an <xmlelement>indexterm</xmlelement> element also contains one or more
                     <xmlelement>index-see</xmlelement> elements, <ph rev="review-1">no locator is
                     included in the generated index entry.</ph></li>

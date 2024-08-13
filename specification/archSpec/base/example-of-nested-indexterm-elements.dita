@@ -5,6 +5,8 @@
   <shortdesc>This example contains a multilevel <xmlelement>indexterm</xmlelement>
     element.</shortdesc>
   <conbody>
+    <draft-comment author="Kristen J Eberlein" time="12 August 2024">Do we
+      want to keep or jettison this topic? Enhance it?</draft-comment>
     <p>Given the following <xmlelement>indexterm</xmlelement> elements:</p>
     <codeblock>&lt;indexterm>cheese
   &lt;indexterm>sheeps milk
@@ -16,7 +18,8 @@
     &lt;indexterm>chevre&lt;/indexterm>
   &lt;/indexterm>
 &lt;/indexterm></codeblock>
-    <p>A processor treats the <xmlelement>indexterm</xmlelement> elements as equivalent to the
+    <p>A processor <ph rev="review-chenier">might treat</ph> the
+        <xmlelement>indexterm</xmlelement> elements as equivalent to the
       following multilevel <xmlelement>indexterm</xmlelement> element:</p>
     <codeblock>&lt;indexterm>cheese
   &lt;indexterm>sheeps milk
@@ -26,8 +29,8 @@
     &lt;indexterm>chevre&lt;/indexterm>
   &lt;/indexterm>
 &lt;/indexterm></codeblock>
-    <!--<draft-comment author="Eliot Kimber" time="09 August 2019"><p>This example reflects a rule about how entries are merged to create effective index structures but per the discussion above, I don't think those rules have been stated with sufficient completeness.</p><p>The example is logical but it's not justified by reference to a previously-defined rule.</p></draft-comment>-->
-    <p>A processor generates the following index entries:</p>
+    <p>A processor <ph rev="review-chenier">might generate</ph> the
+      following index entries:</p>
     <ul>
       <li>A primary entry for "cheese"</li>
       <li>Secondary entries for "goats milk" and "sheeps milk"</li>
