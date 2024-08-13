@@ -10,8 +10,7 @@
       <li>An <term>index</term> is a mapping from
           <xmlelement>indexterm</xmlelement> elements to locations in the
         DITA content.</li>
-      <li>a <term>generated index</term> is a human-readable mapping of
-        index terms to rendered locations.</li>
+      <li>A <term>generated index</term> is a mapping of index terms to rendered locations.</li>
     </ul>
         <p>While DITA provides several elements that support indexing, how those elements are used
             will vary by implementation.</p>

@@ -33,24 +33,26 @@
         <dl>
             <dlentry>
                 <dt>Topic body</dt>
-                <dd rev="review-chenier">The start-of-range and
-          end-of-range elements are in the body of the same DITA topic. The
-          range is defined as between two point references in the DITA
-          topic</dd>
+                <dd rev="review-chenier">The start-of-range and end-of-range elements are in the
+          body of the same DITA topic. The range is defined as between two point references in the
+          DITA topic. If an end-of-range element does not exist within the same topic body, the
+          start-of-range element is treated as a point reference rather than as the start of a
+          range.</dd>
             </dlentry>
             <dlentry>
                 <dt>Topic prolog</dt>
-                <dd rev="review-chenier">The start-of-range and
-          end-of-range elements are in the prolog of the same DITA topic.
-          The range is defined as being between the title of the DITA topic
-          and the end of the last nested topic. </dd>
+                <dd rev="review-chenier">The start-of-range and end-of-range elements are in the
+          prolog of the same DITA topic. The range is defined as being between the title of the DITA
+          topic and the end of the last nested topic. If an end-of-range element does not exist
+          within the topic prolog, the start-of-range element is treated as a point reference rather
+          than as the start of a range.</dd>
             </dlentry>
             <dlentry>
                 <dt>DITA map</dt>
-                <dd rev="review-chenier">The start-of-range and
-          end-of-range elements are contained within topic references in
-          the same DITA map.  If an end-of-range element does not exist
-          within the same map, the start-of-range element is ignored.</dd>
+                <dd rev="review-chenier">The start-of-range and end-of-range elements are contained
+          within topic references in the same DITA map. If an end-of-range element does not exist
+          within the same map, the start-of-range element is treated as a point reference rather
+          than as the start of a range.</dd>
             </dlentry>
         </dl>
         <p>Processors that support index ranges <term outputclass="RFC-2119">SHOULD</term> do the following:<ul>

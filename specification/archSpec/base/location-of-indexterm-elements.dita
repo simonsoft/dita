@@ -18,13 +18,11 @@
         <dl>
             <dlentry>
                 <dt>Topic prologs</dt>
-                <dd>An <xmlelement>indexterm</xmlelement> element that is
-          located in a topic prolog is a point reference to the title of
-          the topic. <ph rev="review-1">If an
-              <xmlelement>indexterm</xmlelement> element has an
-              <xmlatt>end</xmlatt> attribute, it is a point reference to
-            the <ph rev="review-chenier">end of the branch that is
-              specified by the topic reference</ph>.</ph></dd>
+                <dd>An <xmlelement>indexterm</xmlelement> element that is located in a topic prolog
+                    is a point reference to the title of the topic. <ph rev="review-1">If an
+                            <xmlelement>indexterm</xmlelement> element has an <xmlatt>end</xmlatt>
+                        attribute, it is a point reference to the <ph rev="review-chenier">end of
+                            the topic, including any sub-topics</ph>.</ph></dd>
             </dlentry>
             <dlentry rev="review-1">
                 <dt>Anywhere else in a DITA topic</dt>
