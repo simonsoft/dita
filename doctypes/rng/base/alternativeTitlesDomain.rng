@@ -97,7 +97,9 @@
                 </zeroOrMore>
             </define>
             <define name="navtitle.attributes">
-                <attribute name="title-role" a:defaultValue="navigation"/>
+                <optional>
+                    <attribute name="title-role" a:defaultValue="navigation"/>
+                </optional>
                 <ref name="univ-atts"/>
             </define>
             <define name="navtitle.element"> 
@@ -125,7 +127,9 @@
                 </zeroOrMore>
             </define>
             <define name="searchtitle.attributes">
-                <attribute name="title-role" a:defaultValue="search"/>
+                <optional>
+                    <attribute name="title-role" a:defaultValue="search"/>
+                </optional>
                 <ref name="univ-atts"/>
             </define>
             <define name="searchtitle.element">
@@ -154,7 +158,9 @@
                 </zeroOrMore>
             </define>
             <define name="linktitle.attributes">
-                <attribute name="title-role" a:defaultValue="linking"/>
+                <optional>
+                    <attribute name="title-role" a:defaultValue="linking"/>
+                </optional>
                 <ref name="univ-atts"/>
             </define>
             <define name="linktitle.element">
@@ -183,7 +189,9 @@
                 </zeroOrMore>
             </define>
             <define name="subtitle.attributes">
-                <attribute name="title-role" a:defaultValue="subtitle"/>
+                <optional>
+                    <attribute name="title-role" a:defaultValue="subtitle"/>
+                </optional>
                 <ref name="univ-atts"/>
             </define>
             <define name="subtitle.element">
@@ -212,7 +220,9 @@
                 </zeroOrMore>
             </define>
             <define name="titlehint.attributes">
-                <attribute name="title-role" a:defaultValue="hint"/>
+                <optional>
+                    <attribute name="title-role" a:defaultValue="hint"/>
+                </optional>
                 <ref name="univ-atts"/>
             </define>
             <define name="titlehint.element">
