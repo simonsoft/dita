@@ -11,7 +11,6 @@
         <topicref href="index-ranges.dita"/>
         <topicref href="index-sorting.dita"/>
         <topicref href="examples-indexing.dita">
-            <topicref href="example-of-nested-indexterm-elements.dita"/>
             <topicref href="example-index-range-in-a-single-topic.dita"/>
             <topicref href="example-index-range-defined-in-a-topic-prolog.dita"/>
             <topicref href="example-index-range-defined-in-a-map.dita"/>
