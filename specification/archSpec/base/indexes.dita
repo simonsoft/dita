@@ -2,6 +2,6 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept xml:lang="en-us" id="indexes">
  <title>Indexes</title>
- <shortdesc>Processors can generate an index from the content of indexing elements.</shortdesc>
- <conbody/>
+ <shortdesc>Processors can generate <ph rev="review-dave-alvin"
+      >indexes</ph> from the content of indexing elements.</shortdesc>
 </concept>

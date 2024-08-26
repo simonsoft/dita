@@ -3,9 +3,11 @@
 <concept id="index-ranges">
     <title>Index ranges</title>
     <shortdesc>Authors can use the <xmlatt>start</xmlatt> and
-      <xmlatt>end</xmlatt> attributes on <xmlelement>indexterm</xmlelement>
-    elements to index <ph rev="review-chenier">an extended discussion</ph>.
-      <ph rev="review-chenier">The generated index entry reflects the span
+      <xmlatt>end</xmlatt> attributes on <ph rev="review-dave-alvin">a pair
+      of</ph>
+    <xmlelement>indexterm</xmlelement> elements to index <ph
+      rev="review-chenier">an extended discussion</ph>. <ph
+      rev="review-chenier">The generated index entry reflects the span
       between the two <xmlelement>indexterm</xmlelement> elements </ph>. </shortdesc>
     <prolog>
         <metadata>
@@ -21,12 +23,15 @@
         <xmlelement>indexterm</xmlelement> with a <xmlatt>start</xmlatt>
       attribute. <ph rev="review-1">This is called a <term
           rev="review-chenier">start-of-range element</term>.</ph></p>
-    <p rev="review-chenier">The end of an index range is indicated by an
+    <p>The end of an index range is indicated by an
         <xmlelement>indexterm</xmlelement> element with an
         <xmlatt>end</xmlatt> attribute with a value that matches the
         <xmlatt>start</xmlatt> attribute on the start element. <ph
         rev="review-1">This is called an <term rev="review-chenier"
-          >end-of-range element</term>.</ph></p>
+          >end-of-range element</term>.</ph>
+      <ph rev="review-dave-alvin">End-of-range element should contain no
+        content or nested elements.</ph>
+    </p>
         <p rev="review-chenier">The location of the
         <xmlelement>indexterm</xmlelement> elements determines how the span
       is defined:</p>

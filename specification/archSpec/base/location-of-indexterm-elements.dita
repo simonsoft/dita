@@ -26,9 +26,10 @@
             </dlentry>
             <dlentry rev="review-1">
                 <dt>Anywhere else in a DITA topic</dt>
-                <dd>An <xmlelement>indexterm</xmlelement> element that is located in a topic (and
-                    not the topic prolog) is a point reference to the location where the
-                        <xmlelement>indexterm</xmlelement> element occurs.</dd>
+                <dd>An <xmlelement>indexterm</xmlelement> element that is
+          located in a topic (and not <ph rev="review-dave-alvin">in</ph>
+          the topic prolog) is a point reference to the location where the
+            <xmlelement>indexterm</xmlelement> element occurs.</dd>
             </dlentry>
             <dlentry>
                 <dt>DITA maps</dt>
