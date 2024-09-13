@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example_conaction_pushbefore">
+  <title>Example: Using <xmlatt>conaction</xmlatt> to push content before another element</title>
+  <shortdesc>In this scenario, a <xmlatt>conref</xmlatt> and <xmlatt>conaction</xmlatt> are used to
+    push content before an element in another topic.</shortdesc>
+  <conbody>
+    <p>Consider the following topic, which is set up to push a step before a step in another topic.
+      It needs to use two step elements to set up the reuse. The referencing element itself uses
+        <codeph>conaction="mark"</codeph> to mark the referenced element. The element to be pushed
+      immediately preceeds the marking element and uses <codeph>conaction="pushbefore"</codeph>:
+      <codeblock>&lt;steps>
+  &lt;step conaction="pushbefore">
+    &lt;cmd>Do this before B&lt;/cmd>
+  &lt;/step>
+  &lt;step conaction="mark" conref="example.dita#example/b">
+    &lt;cmd/>
+  &lt;/step>
+&lt;/steps></codeblock></p>
+    <p>The referenced element is in the file <filepath>example.dita</filepath>, which looks like
+      this before a processor resolves the
+      reference:<codeblock>&lt;task id="example" xml:lang="en">
+  &lt;title>Example topic&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;step id="a">&lt;cmd>A&lt;/cmd>&lt;/step>
+      &lt;step id="b">&lt;cmd>B&lt;/cmd>&lt;/step>
+      &lt;step id="c">&lt;cmd>C&lt;/cmd>&lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock></p>
+    <p>After the content reference is resolved, the document <filepath>example.dita</filepath>
+      includes the pushed <xmlelement>step</xmlelement> element before the step with
+        <xmlatt>id</xmlatt> set to
+      <keyword>b</keyword>:<codeblock>&lt;task id="example" xml:lang="en">
+  &lt;title>Example topic&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;step id="a">&lt;cmd>A&lt;/cmd>&lt;/step>
+      &lt;step>&lt;cmd>Do this before B&lt;/cmd>&lt;/step>
+      &lt;step id="b">&lt;cmd>B&lt;/cmd>&lt;/step>
+      &lt;step id="c">&lt;cmd>C&lt;/cmd>&lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock></p>
+  </conbody>
+</concept>

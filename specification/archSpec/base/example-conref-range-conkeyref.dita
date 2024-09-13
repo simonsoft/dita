@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example_range_conkeyref">
+  <title>Example: Reusing a range with <xmlatt>conkeyref</xmlatt></title>
+  <shortdesc>In this scenario, a <xmlatt>conkeyref</xmlatt> is used to define the start of a range
+    and <xmlatt>conrefend</xmlatt> is used to define the end of a range.</shortdesc>
+  <conbody>
+    <p>In the following sample, the key <keyword>xmp</keyword> is defined as the first topic in the
+      file <filepath>examples.dita.</filepath></p>
+    <fig id="fig_htb_lzf_scc">
+      <title>Defining and referencing a key with <xmlatt>conkeyref</xmlatt></title>
+      <codeblock id="codeblock_hwy_krh_psb">&lt;map>
+  &lt;!-- ... -->
+  &lt;keydef keys="xmp" href="examples.dita"/>
+  &lt;!-- ... -->
+&lt;/map></codeblock>
+      <codeblock id="codeblock_iwy_krh_psb">&lt;!-- examples.dita: -->
+&lt;topic id="examples">
+  &lt;title>These are examples&lt;/title>
+  &lt;body>
+    &lt;ul>
+      &lt;li id="first">A first example&lt;/li>
+      &lt;li>Another trivial example&lt;/li>
+      &lt;li id="last">Final example&lt;/li>
+    &lt;/ul>
+  &lt;/body>
+&lt;/topic></codeblock>
+    </fig>
+    <p>To reuse these list items by using the key, the <xmlatt>conkeyref</xmlatt> attribute combines
+      the key itself with the sub-topic id <keyword>first</keyword> to define the start of the
+      range. The <xmlatt>conrefend</xmlatt> attribute defines a default high-level object along with
+      the sub-topic id <keyword>last</keyword> that ends the
+      range:<codeblock>  &lt;li conkeyref="xmp/first" 
+      conrefend="default.dita#default/last"/></codeblock></p>
+    <p>The <xmlatt>conkeyref</xmlatt> attribute uses a key to reference the first topic in
+        <filepath>examples.dita</filepath>, so the range begins with the object
+        <codeph>examples.dita#examples/first</codeph>. The high-level object in the
+        <xmlatt>conrefend</xmlatt> attribute (<codeph>default.dita#default</codeph>) is replaced
+      with the object represented by the key (the first topic in
+      <filepath>examples.dita</filepath>), resulting in a range that ends with the object
+        <codeph>examples.dita#examples/last</codeph>.</p>
+    <fig id="fig_itb_lzf_scc">
+      <title>Combining <xmlatt>conref</xmlatt>, <xmlatt>conkeyref</xmlatt>, and
+          <xmlatt>conrefend</xmlatt></title>
+      <p>When <xmlatt>conref</xmlatt>, <xmlatt>conkeyref</xmlatt>, and <xmlatt>conrefend</xmlatt>
+        are all specified, the key value takes priority.</p>
+      <codeblock>  &lt;li conkeyref="thisconfig/start"
+      conref="standardconfig.dita#config/start"
+      conrefend="standardconfig.dita#config/end"/></codeblock>
+      <ul id="ul_jtb_lzf_scc">
+        <li>If the key <keyword>thisconfig</keyword> is defined as
+            <codeph>mySpecialConfig.dita#myconfig</codeph>, then the range will go from the list
+          item with <codeph>id="start"</codeph> to the list item with<codeph>id="end"</codeph> in
+          the topic <codeph>mySpecialConfig.dita#myconfig</codeph>.</li>
+        <li>If the key <keyword>thisconfig</keyword> is defined as <codeph>myConfig.dita</codeph>,
+          then the range will go from the list item with <codeph>id="start"</codeph> to the list
+          item with <codeph>id="end"</codeph> within the first topic in
+            <codeph>myConfig.dita</codeph>.</li>
+        <li>If the key <keyword>thisconfig</keyword> is not defined, then the unchanged
+            <xmlatt>conref</xmlatt> and <xmlatt>conrefend</xmlatt> attributes are used as fallback.
+          In that case, the range will go from the list item with <codeph>id="start"</codeph> to the
+          list item with <codeph>id="end"</codeph> within the topic
+            <codeph>standardconfig.dita#config</codeph>.</li>
+      </ul>
+    </fig>
+  </conbody>
+</concept>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example_conref_target_contains_xref">
+  <title>Example: Resolving conrefs to elements that contain cross references, with key
+    scopes</title>
+  <shortdesc>In this scenario, elements referenced by conref include cross references using a
+    variety of referencing styles. The topics themselves are used in a map that makes use of key
+    scopes.</shortdesc>
+  <conbody>
+    <p>Consider the following paragraphs in <filepath>paras-01.dita</filepath> that are intended to
+      be used by reference from other topics:</p>
+    <codeblock>&lt;topic id="paras-01">
+    &lt;title>Reusable paragraphs&lt;/title>
+    &lt;body>
+        &lt;p id="p1">See &lt;xref href="#paras-01/p5"/>.&lt;/p>
+        &lt;p id="p2">See &lt;xref href="topic-02.dita#topic02/fig-01"/>.&lt;/p>
+        &lt;p id="p3">See &lt;xref href="#./p5"/>.&lt;/p>
+        &lt;p id="p4">See &lt;xref keyref="task-remove-cover"/>.&lt;/p>
+        &lt;p id="p5">Paragraph 5 in paras-01.&lt;/p>
+    &lt;/body>
+&lt;/topic></codeblock>
+    <p>The paragraphs are used by content reference from other topics, including the
+        <filepath>using-topic-01.dita</filepath> topic:</p>
+    <codeblock>&lt;topic id="using-topic-01">&lt;title>Using topic one&lt;/title>
+    &lt;body>
+        &lt;p id="A" conref="paras-01.dita#paras-01/p1"/> 
+        &lt;p id="B" conref="paras-01.dita#paras-01/p2"/> 
+        &lt;p id="C" conref="paras-01.dita#paras-01/p3"/>
+        &lt;p id="D" conref="paras-01.dita#paras-01/p4"/>
+        &lt;p id="p5">Paragraph 5 in using-topic-01&lt;/p>  
+    &lt;/body>
+&lt;/topic></codeblock>
+    <p>Now consider the following map, which uses each of the topics above:<codeblock>&lt;map>
+  &lt;topicgroup keyscope="product-1">
+    &lt;topicref keys="task-remove-cover" href="prod-1-task-remove-cover.dita"/>
+    &lt;topicref href="using-topic-01.dita"/>
+  &lt;/topicgroup>
+  &lt;topicgroup keyscope="product-2">
+    &lt;topicref keys="task-remove-cover" href="prod-2-task-remove-cover.dita"/>
+    &lt;topicref href="using-topic-01.dita"/>
+  &lt;/topicgroup>
+&lt;/map></codeblock></p>
+    <p>The map establishes two key scopes: "product-1" and "product-2". Within the map branches, the
+      key name "task-remove-cover" is bound to a different topic. The topic
+        <filepath>using-topic-01.dita</filepath>, which includes a conref to a paragraph that
+      includes a cross reference to the key name "task-remove-cover", is also referenced in each
+      branch. When each branch is rendered, the target of the cross reference is different.</p>
+    <p>In the first branch with the key scope set to "product-1", the cross reference from paragraph
+      p4 is resolved to <filepath>prod-1-task-remove-cover.dita</filepath>. In the second branch
+      with the key scope set to "product-2", the cross reference from paragraph p4 is resolved to
+        <filepath>prod-2-task-remove-cover.dita</filepath>.</p>
+  </conbody>
+</concept>
