@@ -51,9 +51,11 @@
   </relrow>
   <relrow>
    <relcell>
-    <topicref href="handling-xref-and-conref-within-topics.dita" />
+    <topicref href="theconkeyrefattribute.dita"/>
    </relcell>
-   <relcell><!--<topicref href="../../langRef/attributes/thehrefattribute.dita"/>--></relcell>
+   <relcell>
+    <topicref href="example-keys-conref-redirection.dita"/>
+   </relcell>
   </relrow>
  </reltable>
 </map>
