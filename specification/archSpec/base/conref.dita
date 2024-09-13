@@ -2,10 +2,10 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="conref" xml:lang="en-us">
  <title>Content <ph >reference</ph> (conref)</title>
- <shortdesc >The DITA conref attributes provide mechanisms for reusing content.
-  DITA content references support reuse scenarios that are difficult or impossible to implement
-  using other XML-based inclusion mechanisms like XInclude and entities. Additionally, DITA content
-  references have rules that help ensure that the results of content inclusion remain valid after
+ <shortdesc>The DITA conref attributes provide mechanisms for reusing content. DITA content
+  references support reuse scenarios that are difficult or impossible to implement using many
+  XML-based inclusion mechanisms like XInclude and entities. Additionally, DITA content references
+  have rules that help ensure that the results of content inclusion remain valid after
   resolution</shortdesc>
  <prolog>
   <metadata>

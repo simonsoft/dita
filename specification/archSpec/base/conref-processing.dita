@@ -19,10 +19,10 @@
  </prolog>
  <conbody>
   <note>The DITA <xmlatt>conref</xmlatt> attribute is a transclusion mechanism similar to XInclude
-   and to HyTime value references. DITA differs from these mechanisms, however, in that conref
-   validity does not apply simply to the current content at the time of replacement, but to the
-   possible content given the restrictions of both the referencing document type and the referenced
-   document type.</note>
+      and to HyTime value references. DITA differs from these mechanisms, however, in that conref
+      validity does not apply simply to the current content at the time of replacement, but to the
+      possible resolved content given the restrictions of both the referencing document type and the
+      referenced document type.</note>
    <p>When content is reused between two documents with different domains or constraints, it is
       possible for the reused content to include domain extensions that are not defined for the new
       context, or to include elements that would be constrained out of the new context. When pulling
@@ -33,5 +33,59 @@
   <p>A conref processor <term outputclass="RFC-2119">SHOULD NOT</term> permit resolution of a reuse
       relationship that could be rendered invalid under the rules of either the reused or reusing
       content.</p>
+    <p>When resolving <xmlatt>conkeyref</xmlatt> attributes, processors <term outputclass="RFC-2119"
+        >SHOULD</term> issue a warning when a <xmlatt>conkeyref</xmlatt> reference cannot be
+      resolved and there is no <xmlatt>conref</xmlatt> attribute to use as a fallback. Processors
+        <term outputclass="RFC-2119">MAY</term> issue a warning when a <xmlatt>conkeyref</xmlatt>
+      cannot be resolved to an element and a specified <xmlatt>conref</xmlatt> is used as a
+      fallback.</p>
+    <section id="error-conditions" outputclass="errorcondition">
+      <title>Common error conditions related to conref ranges</title>
+      <p>When encountering the following error conditions, an implementation can optionally issue an
+        error message.</p>
+      <table id="table_pbn_czf_scc">
+        <tgroup cols="2">
+          <colspec colname="col1" colnum="1" colwidth="1*"/>
+          <colspec colname="col2" colnum="2" colwidth="1*"/>
+          <thead>
+            <row>
+              <entry colname="col1">Condition or Issue</entry>
+              <entry colname="col2">Result</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">The <xmlatt>conref</xmlatt> attribute cannot be resolved in the
+                target document (the target element might have been removed or its id has changed). </entry>
+              <entry colname="col2">The <xmlatt>conref</xmlatt> is ignored.</entry>
+            </row>
+            <row>
+              <entry colname="col1">The <xmlatt>conrefend</xmlatt> attribute cannot be resolved in
+                the target document (the target element might have been removed or its id has
+                changed).</entry>
+              <entry colname="col2">Range cannot be resolved, optional recovery processes the result
+                as a simple conref.</entry>
+            </row>
+            <row>
+              <entry colname="col1">Start and end elements are not siblings in the target
+                document.</entry>
+              <entry colname="col2">If the start element exists, optional recovery processes the
+                result as a simple conref. </entry>
+            </row>
+            <row>
+              <entry colname="col1">End element occurs before the start element in the target
+                document.</entry>
+              <entry colname="col2">If the start element exists, optional recovery processes the
+                result as a simple conref.</entry>
+            </row>
+            <row>
+              <entry colname="col1">An element has a <xmlatt>conrefend</xmlatt> attribute but is
+                missing the <xmlatt>conref</xmlatt> attribute.</entry>
+              <entry colname="col2">No result.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
  </conbody>
 </concept>

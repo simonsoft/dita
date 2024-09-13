@@ -13,17 +13,11 @@
     </metadata>
   </prolog>
 <refbody>
-    <section id="section_pdh_wxy_qpb">
-      <draft-comment author="robander" time="19 May 2021">This topic is moving into the arch spec,
-        but needs further editing to split overview / conceptual info from processing info; this and
-        other conref-attribute topics currently have a bunch of processing info that is missing from
-        the actual "Processing conref" arch spec topics.</draft-comment>
-    </section>
-<section id="section-1"><p>The value of the <xmlatt>conref</xmlatt> attribute must be a URI reference to a DITA element. See
+<section id="section-1"><p>The value of the <xmlatt>conref</xmlatt> attribute is a URI reference to a DITA element. See
           <xref href="../../archSpec/base/uri-based-addressing.dita"/> for details on specifying URI
-        references to DITA elements. <ph>As with other DITA references, a <xmlatt>conref</xmlatt>
-          attribute that references a resource without an ID is treated as a reference to the first
-          topic or map in the document.</ph></p><note>When using the <xmlatt>conref</xmlatt> attribute on an element, the content of that element is
+        references to DITA elements. As with other DITA references, a <xmlatt>conref</xmlatt>
+        attribute that references a resource without an ID is treated as a reference to the first
+        topic or map in the document.</p><note>When using the <xmlatt>conref</xmlatt> attribute on an element, the content of that element is
         ignored. For example, if a phrase is marked up like
         this:<codeblock>&lt;ph conref="#topic/ph">Something&lt;/ph></codeblock> the
         word "Something" will be replaced by the content of the referenced
