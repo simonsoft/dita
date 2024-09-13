@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example_conaction_pushreplace">
+  <title>Example: Using <xmlatt>conaction</xmlatt> to replace content</title>
+  <shortdesc>In this scenario, a <xmlatt>conref</xmlatt> and <xmlatt>conaction</xmlatt> are used to
+    replace content in another topic.</shortdesc>
+  <conbody>
+    <p>Consider the following task in <filepath>example.dita</filepath> that has the
+        <xmlatt>id</xmlatt> attribute set to <keyword>example</keyword>. The task contains a
+        <xmlelement>step</xmlelement> element with the <xmlatt>id</xmlatt> set to
+        <keyword>b</keyword>:</p>
+    <codeblock id="codeblock_scr_wqh_psb">&lt;task id="example" xml:lang="en">
+  &lt;title>Example topic&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;step id="a">&lt;cmd>A&lt;/cmd>&lt;/step>
+      &lt;step id="b">&lt;cmd>B&lt;/cmd>&lt;/step>
+      &lt;step id="c">&lt;cmd>C&lt;/cmd>&lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock>
+    <p>In order to replace the step with <codeph>id="b"</codeph>, another topic must combine a
+        <xmlatt>conaction</xmlatt> value of <keyword>pushreplace</keyword> with a
+        <xmlatt>conref</xmlatt> attribute that references this
+      <xmlelement>step</xmlelement>:<codeblock>&lt;!-- Steps element within another task -->
+&lt;steps>
+  &lt;step conaction="pushreplace" 
+        conref="example.dita#example/b">
+    &lt;cmd>Updated B&lt;/cmd>
+  &lt;/step>
+&lt;/steps>
+&lt;/task></codeblock></p>
+    <p>The result will be an updated version of <filepath>example.dita</filepath> which contains the
+      pushed <xmlelement>step</xmlelement>:<codeblock>&lt;task id="example" xml:lang="en">
+  &lt;title>Example topic&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;step id="a">&lt;cmd>A&lt;/cmd>&lt;/step>
+      &lt;step id="b">&lt;cmd>Updated B&lt;/cmd>&lt;/step>
+      &lt;step id="c">&lt;cmd>C&lt;/cmd>&lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock></p>
+  </conbody>
+</concept>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example_list_range">
+    <title>Example: Reusing a sequence of list items</title>
+    <shortdesc>In this scenario, a <xmlatt>conref</xmlatt> and <xmlatt>conrefend</xmlatt> are used
+    to reference a range of list items.</shortdesc>
+    <conbody>
+    <p>In the following code sample, we have a library topic that defines a series of list items.
+      Each list item has an <xmlatt>id</xmlatt> attribute, making it possible to reuse them
+      individually or as ranges.</p>
+    <fig id="fig_vw4_lxf_scc">
+      <title>Source document <filepath>topic.dita</filepath></title>
+      <codeblock>&lt;topic id="x">
+  &lt;title>Sample file topic.dita&lt;/title>
+  &lt;body>
+    &lt;ol id="list">
+      &lt;li id="apple">A&lt;/li>
+      &lt;li id="bear">B&lt;/li>
+      &lt;li id="cat">C&lt;/li>
+      &lt;li id="dog">D&lt;/li>
+      &lt;li id="eel">E&lt;/li>
+    &lt;/ol>
+  &lt;/body>
+&lt;/topic></codeblock>
+    </fig>
+    <p>The following topic reuses a range of items from that list, without reusing the entire
+      list.</p>
+    <fig id="fig_C0AF6F23F1E74AF98540F736113DFFAB">
+      <title>Reusing a range of items</title>
+      <codeblock>&lt;topic id="y">
+  &lt;title>Sample file reusing content&lt;/title>
+  &lt;body>
+    &lt;ol>
+      &lt;li>My own first item&lt;/li>
+      &lt;li conref="topic.dita#x/bear" conrefend="topic.dita#x/dog"/>
+      &lt;li>And a different final item&lt;/li>
+    &lt;/ol>
+  &lt;/body>
+&lt;/topic></codeblock>
+    </fig>
+    <p>In the resolved topic, all list items from the starting "bear" to the ending "dog" are pulled
+      in to replace the referencing element. The <xmlatt>id</xmlatt> attributes on the referenced
+      elements are not preserved, but any <xmlatt>id</xmlatt> attributes on intermediate elements
+      are preserved.</p>
+    <fig id="fig_A79BE8A6869B4DFDAAFA2F55BC113AA1">
+      <title>Processed result of reusing topic</title>
+      <codeblock>&lt;topic id="y">
+  &lt;title>Sample file reusing content&lt;/title>
+  &lt;body>
+    &lt;ol>
+      &lt;li>My own first item&lt;/li>
+      &lt;li>B&lt;/li>
+      &lt;li id="cat">C&lt;/li>
+      &lt;li>D&lt;/li>
+      &lt;li>And a different final item&lt;/li>
+    &lt;/ol>
+  &lt;/body>
+&lt;/topic></codeblock>
+    </fig>
+    </conbody>
+</concept>

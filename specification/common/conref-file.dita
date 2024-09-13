@@ -17,8 +17,8 @@
             <xmlelement>reference</xmlelement></ph></p>
                         <p><ph id="maps-shortdesc">DITA maps are documents that organize topics and
           other resources into structured collections of information. DITA maps specify hierarchy
-          and the relationships among the topics; they also provide the <ph>contexts</ph> in which
-          keys are defined and resolved.</ph></p>
+          and the relationships among the topics; they also provide the contexts in which keys are
+          defined and resolved.</ph></p>
                         <p><ph id="information-typing-shortdesc">Information typing is the practice
           of identifying types of topics, such as concept, reference, and task, to clearly
           distinguish between different types of information. Topics that answer different reader
@@ -42,10 +42,9 @@
           an abbreviated fragment-identifier syntax that can be used when addressing non-topic
           elements from within the same topic.</ph></p>
                         <p><ph id="conref-shortdesc">The DITA <xmlatt>conref</xmlatt>,
-            <xmlatt>conkeyref</xmlatt>, <xmlatt>conrefend</xmlatt>, and <xmlatt 
-            >conaction</xmlatt> attributes provide mechanisms for reusing content within DITA topics
-          or maps. <ph >These mechanisms can be used both to <ph 
-              >pull and push</ph> content.</ph></ph></p>
+            <xmlatt>conkeyref</xmlatt>, <xmlatt>conrefend</xmlatt>, and <xmlatt>conaction</xmlatt>
+          attributes provide mechanisms for reusing content within DITA topics or maps. These
+          mechanisms can be used both to pull and push content.</ph></p>
                         <p><ph id="conditional-processing-shortdesc"
           >Conditional processing is the filtering or flagging of
           information based on processing-time

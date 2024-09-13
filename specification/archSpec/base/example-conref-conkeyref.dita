@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example_simple_conkeyref">
+    <title>Example: Simple <xmlatt>conkeyref</xmlatt> usage</title>
+    <shortdesc>In this scenario, a <xmlatt>conkeyref</xmlatt> attribute is used as an indirect
+    reference to pull content from the referenced element in another topic.</shortdesc>
+    <conbody>
+        <p>Consider the following topic:</p>
+        <codeblock>&lt;task id="setup-widget" xml:lang="en">
+  &lt;title>Setting up the widget&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;step>&lt;cmd>Turn the widget on for the first time.&lt;/cmd>&lt;/step>
+      &lt;step>&lt;cmd>Follow the prompts to select your language and region.&lt;/cmd>&lt;/step>
+      <b>&lt;step conkeyref="reuselibrary/setup-profile">&lt;cmd>&lt;/cmd>&lt;/step></b>
+      &lt;step>&lt;cmd>Step outside and activate the widget.&lt;/cmd>&lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock>
+    <p>The key is defined as a reference to a resue library:</p>
+    <codeblock>&lt;map>
+  &lt;title>Key definitions&lt;/title>
+  &lt;keydef keys="reuselibrary" href="reuse-library.dita"/>
+  &lt;!-- ... -->
+&lt;/map></codeblock>
+        <p>The library topic <filepath>reuse-library.dita</filepath> is set up as follows:</p>
+        <codeblock>&lt;task id="reuse-library" xml:lang="en">
+  &lt;title>Reuse library topic&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;!-- ... other steps used across tasks ... -->
+      &lt;step id="setup-profile">
+        &lt;cmd>Follow the prompts to set up your name and contact information.&lt;/cmd>
+        &lt;info>Contact information is optional, but recommended.&lt;/info>
+      &lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock>
+        <p>When the <xmlatt>conkeyref</xmlatt> attribute is resolved, the key resolves to the topic
+      that contains the referenced ID <codeph>setup-profile</codeph>. The result is the same as if
+      the original topic contained
+        <codeph>conref="reuse-library.dita#reuse-library/setup-profile"</codeph> instead of
+        <codeph>conkeyref="reuselibrary/setup-profile"</codeph>. However, the indirection created by
+      using a key allows this reference to resolve differently in other contexts.</p>
+    <p>The processed version of the original topic will include content from the referenced
+      element:</p>
+        <codeblock>&lt;task id="setup-widget" xml:lang="en">
+  &lt;title>Setting up the widget&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;step>&lt;cmd>Turn the widget on for the first time.&lt;/cmd>&lt;/step>
+      &lt;step>&lt;cmd>Follow the prompts to select your language and region.&lt;/cmd>&lt;/step>
+      <b>&lt;step>
+        &lt;cmd>Follow the prompts to set up your name and contact information.&lt;/cmd>
+        &lt;info>Contact information is optional, but recommended.&lt;/info>
+      &lt;/step></b>
+      &lt;step>&lt;cmd>Step outside and activate the widget.&lt;/cmd>&lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock>
+    </conbody>
+</concept>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example_simple_conref">
+    <title>Example: Simple <xmlatt>conref</xmlatt> usage</title>
+    <shortdesc>In this scenario, a <xmlatt>conref</xmlatt> attribute is used to pull content from
+        the referenced element in another topic.</shortdesc>
+    <conbody>
+        <p>Consider the following topic:</p>
+        <codeblock>&lt;task id="setup-widget" xml:lang="en">
+  &lt;title>Setting up the widget&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;step>&lt;cmd>Turn the widget on for the first time.&lt;/cmd>&lt;/step>
+      &lt;step>&lt;cmd>Follow the prompts to select your language and region.&lt;/cmd>&lt;/step>
+      <b>&lt;step conref="reuse-library.dita#reuse/setup-profile">&lt;cmd>&lt;/cmd>&lt;/step></b>
+      &lt;step>&lt;cmd>Step outside and activate the widget.&lt;/cmd>&lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock>
+        <p>That topic requires the existence of another topic,
+                <filepath>reuse-library.dita</filepath>:</p>
+        <codeblock>&lt;task id="reuse-library" xml:lang="en">
+  &lt;title>Reuse library topic&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;!-- ... other steps used across tasks ... -->
+      &lt;step id="setup-profile">
+        &lt;cmd>Follow the prompts to set up your name and contact information.&lt;/cmd>
+        &lt;info>Contact information is optional, but recommended.&lt;/info>
+      &lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock>
+        <p>These topics highlight some important things to remember when using
+                <xmlatt>conref</xmlatt> attributes:<ul id="ul_z1g_lrf_scc">
+                <li>The attribute includes both the ID of the referenced topic and the ID of the
+                    referenced element.</li>
+                <li>When an element with a <xmlatt>conref</xmlatt> attribute has required child
+                    elements, those child elements must still be specified. The use of DITA's
+                        <xmlatt>conref</xmlatt> attribute does not override the XML rules that
+                    require such child elements.</li>
+            </ul></p>
+        <p>When the <xmlatt>conref</xmlatt> attribute is resolved, the processed version of the
+            original topic will include content from the referenced element:</p>
+        <codeblock>&lt;task id="setup-widget" xml:lang="en">
+  &lt;title>Setting up the widget&lt;/title>
+  &lt;taskbody>
+    &lt;steps>
+      &lt;step>&lt;cmd>Turn the widget on for the first time.&lt;/cmd>&lt;/step>
+      &lt;step>&lt;cmd>Follow the prompts to select your language and region.&lt;/cmd>&lt;/step>
+      <b>&lt;step>
+        &lt;cmd>Follow the prompts to set up your name and contact information.&lt;/cmd>
+        &lt;info>Contact information is optional, but recommended.&lt;/info>
+      &lt;/step></b>
+      &lt;step>&lt;cmd>Step outside and activate the widget.&lt;/cmd>&lt;/step>
+    &lt;/steps>
+  &lt;/taskbody>
+&lt;/task></codeblock>
+    </conbody>
+</concept>

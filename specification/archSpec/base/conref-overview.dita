@@ -35,19 +35,18 @@
         <dt>Pushing content from the referencing element</dt>
         <dd>
           <p>The <xmlatt>conaction</xmlatt> attribute reverses the direction of reuse from pull to
-            push. <ph >With a push, the referencing element is rendered before,
-              after, or in place of the referenced element. The location (before, after, or in place
-              of) is determined by the value of the <xmlatt>conaction</xmlatt> attribute.</ph>
-            Because the <xmlatt>conaction</xmlatt> and <xmlatt>conrefend</xmlatt> attributes cannot
-            both be used within the same referencing element, it is not possible to push a range of
-            elements.</p>
+            push. With a push, the referencing element is rendered before, after, or in place of the
+            referenced element. The location (before, after, or in place of) is determined by the
+            value of the <xmlatt>conaction</xmlatt> attribute. The <xmlatt>conaction</xmlatt> and
+              <xmlatt>conrefend</xmlatt> attributes cannot both be used within the same referencing
+            element, so it is not possible to push a range of elements.</p>
         </dd>
       </dlentry>
     </dl>
     <p>A fragment of DITA content, such as an XML document that contains only a single paragraph
-      without a topic ancestor, does not contain enough information for the conref processor to be
-      able to determine the validity of a reference to it. Consequently, the value of a conref must
-      specify one of the following items:</p>
+      without a topic ancestor, does not contain enough information for a conref processor to be
+      able to determine the validity of a reference to it. Consequently, the value of a
+        <xmlatt>conref</xmlatt> attribute must be one of the following items:</p>
     <ul>
       <li>A referenced element within a DITA map</li>
       <li>A referenced element within a DITA topic</li>

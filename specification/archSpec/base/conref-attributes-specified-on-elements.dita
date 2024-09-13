@@ -52,7 +52,7 @@
    originating context, even if they are not valid in an intermediate context. </p>
   <p otherprops="examples">For example, if topic A and topic C allow highlighting, and topic B does
       not, then a content reference chain of topic A-to-topic B-to-topic C should preserve any
-      highlighting elements in the referenced content. The result, however it is achieved, must be
+      highlighting elements in the referenced content. The result, however it is achieved, is
       equivalent to the result of resolving the conref pairs recursively starting from the original
       referencing element in topic A.</p>
  </conbody>

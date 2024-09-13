@@ -4,14 +4,26 @@
  <title>Content reference (conref)</title>
  <topicref href="conref.dita" keys="conref">
     <topicref href="conref-overview.dita"/>
+  <topicref keyref="attributes-conref"/>
+  <topicref keyref="attributes-conkeyref"/>
+  <topicref keyref="attributes-conrefend"/>
     <topicref keyref="attributes-conaction"/>
-    <topicref keyref="attributes-conrefend"/>
-    <topicref keyref="attributes-conkeyref"/>
-    <topicref keyref="attributes-conref"/>
     <topicref keyref="attributes-useconreftarget"/>
     <topicref href="conref-processing.dita"/>
     <topicref href="conref-attributes-specified-on-elements.dita"/>
     <topicref href="handling-xref-and-conref-within-topics.dita"/>
+  <topicref href="examples-conref.dita">
+   <topicref href="example-conref-simple.dita"/>
+   <topicref href="example-conref-conkeyref.dita"/>
+   <topicref href="example-conref-range-list.dita"/>
+   <topicref href="example-conref-range-blocks.dita"/>
+   <topicref href="example-conref-range-conkeyref.dita"/>
+   <topicref href="example-conref-conaction-replace.dita"/>
+   <topicref href="example-conref-conaction-pushbefore.dita"/>
+   <topicref href="example-conref-conaction-pushafter.dita"/>
+   <topicref href="example-conref-includes-xref.dita"/>
+   <topicref href="example-conref-includes-xref-and-keyscope.dita"/>
+  </topicref>
   </topicref>
  <reltable title="Source&lt;-->Target">
   <relheader>
