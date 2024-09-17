@@ -29,8 +29,8 @@
         <dl>
             <dlentry>
                 <dt><xmlelement>indexterm</xmlelement></dt>
-                <dd><ph rev="review-chenier">Defines a term or subject that
-            can contribute to an index.</ph>
+                <dd><ph rev="review-chenier">Defines a term that can
+            contribute to an index.</ph>
           <ph rev="review-dave-alvin">Matching values of
               <xmlatt>start</xmlatt> and <xmlatt>end</xmlatt> attributes on
               <xmlelement>indexterm</xmlelement> elements can specify an
@@ -38,15 +38,16 @@
             </dlentry>
             <dlentry>
                 <dt><xmlelement>index-see</xmlelement></dt>
-                <dd rev="review-1"><ph rev="review-chenier">Defines a term or subject to use as a
-                            <term>see reference</term>.</ph> See references direct a reader to the
-                    preferred term.</dd>
+                <dd rev="review-1"><ph rev="review-chenier">Defines a term
+            to use as a <term>see reference</term>.</ph> See references
+          direct a reader to the preferred term.</dd>
             </dlentry>
             <dlentry>
                 <dt><xmlelement>index-see-also</xmlelement></dt>
-                <dd rev="review-1"><ph rev="review-chenier">Defines a term or subject to use as a
-                            <term>see also reference</term>.</ph> See also references direct a
-                    reader to an alternate index entry for additional information.</dd>
+                <dd rev="review-1"><ph rev="review-chenier">Defines a term
+            to use as a <term>see also reference</term>.</ph> See also
+          references direct a reader to an alternate index entry for
+          additional information.</dd>
             </dlentry>
         </dl>
         <p>How the index elements are combined, the location of

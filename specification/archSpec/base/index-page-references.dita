@@ -4,8 +4,7 @@
     <title>Index locators</title>
     <shortdesc>An <xmlelement>indexterm</xmlelement> element <ph
       rev="review-chenier">binds the content of the element, typically a
-      term or subject, to a specific location in a
-    document.</ph></shortdesc>
+      term, to a specific location in a document.</ph></shortdesc>
     <prolog>
         <metadata>
             <keywords>
@@ -26,9 +25,13 @@
             <li>An <xmlelement>indexterm</xmlelement> element that contains
         child <xmlelement>indexterm</xmlelement> elements contributes to
         the hierarchy of the multilevel index entry that is generated. Only
-        a <ph rev="review-chenier">leaf</ph>
+        a <term rev="review-chenier">leaf</term>
         <xmlelement>indexterm</xmlelement> element contributes a locator to
-        the generated index entry.</li>
+        the generated index entry. <ph rev="review-dave-alvin">A leaf
+            <xmlelement>indexterm</xmlelement> element is an
+            <xmlelement>indexterm</xmlelement> element that does not
+          contain any other <xmlelement>indexterm</xmlelement> elements.
+        </ph></li>
             <li>If an <xmlelement>indexterm</xmlelement> element also contains one or more
                     <xmlelement>index-see</xmlelement> elements, <ph rev="review-1">no locator is
                     included in the generated index entry.</ph></li>
