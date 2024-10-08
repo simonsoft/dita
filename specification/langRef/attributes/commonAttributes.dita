@@ -594,7 +594,7 @@
               name that acts as a redirectable reference based on a key
               definition within a map.<ph platform="dita"> See <xref
                   keyref="attributes-keyref"/> for information on using
-                this attribute.</ph></ph><p>For HDITA, the equivalent of
+                this attribute.</ph></ph><p platform="lwdita">For HDITA, the equivalent of
                 <xmlatt>keyref</xmlatt> is
               <xmlatt>data-keyref</xmlatt></p><draft-comment
               author="robander">The definiton above for @keyref should be
