@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
- "reference.dtd">
-<reference id="theconkeyrefattribute" xml:lang="en-us">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="theconkeyrefattribute" xml:lang="en-us">
 <title>The <xmlatt>conkeyref</xmlatt> attribute</title>
   <shortdesc>The <xmlatt>conkeyref</xmlatt> attribute provides an indirect content reference to
     topic elements, map elements, or elements within maps or topics. It allows the referencing
@@ -13,8 +13,7 @@
       </keywords>
     </metadata>
   </prolog>
-<refbody>
-    <section id="section-1">
+<conbody>
       <p>When the target of a content reference is an element within a topic or map, the value of
         the <xmlatt>conkeyref</xmlatt> attribute is a key name, followed by a slash ("/"), followed
         by the ID of the referenced element. The key name must be bound to the topic or map that
@@ -32,6 +31,6 @@
         by the <xmlatt>conrefend</xmlatt> attribute. See <xref
           keyref="attributes-conrefend/conkeyref"/> for more information and for examples of this
         behavior.</p>
-    </section>
-</refbody>
-</reference>
+    
+</conbody>
+</concept>

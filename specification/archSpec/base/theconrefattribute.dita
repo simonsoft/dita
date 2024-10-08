@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
- "reference.dtd">
-<reference id="theconrefattribute" xml:lang="en-us">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="theconrefattribute" xml:lang="en-us">
 <title>The <xmlatt>conref</xmlatt> attribute</title>
 <shortdesc>The <xmlatt>conref</xmlatt> attribute is used to reference content that can be reused. It
     allows reuse of DITA elements, including topic or map level elements.</shortdesc>
@@ -12,16 +12,16 @@
       </keywords>
     </metadata>
   </prolog>
-<refbody>
-<section id="section-1"><p>The value of the <xmlatt>conref</xmlatt> attribute is a URI reference to a DITA element. See
+<conbody>
+<p>The value of the <xmlatt>conref</xmlatt> attribute is a URI reference to a DITA element. See
           <xref href="../../archSpec/base/uri-based-addressing.dita"/> for details on specifying URI
         references to DITA elements. As with other DITA references, a <xmlatt>conref</xmlatt>
         attribute that references a resource without an ID is treated as a reference to the first
         topic or map in the document.</p><note>When using the <xmlatt>conref</xmlatt> attribute on an element, the content of that element is
-        ignored. For example, if a phrase is marked up like
-        this:<codeblock>&lt;ph conref="#topic/ph">Something&lt;/ph></codeblock> the
-        word "Something" will be replaced by the content of the referenced
-          <xmlelement>ph</xmlelement> element.</note></section>
-</refbody>
-</reference>
+        ignored <ph rev="review-ella">by processors</ph>. For example, if a phrase is marked up like
+        this:<codeblock>&lt;ph conref="#topic/ph">Something&lt;/ph></codeblock> the word "Something"
+        will be replaced by the content of the referenced <xmlelement>ph</xmlelement>
+        element.</note>
+</conbody>
+</concept>
 

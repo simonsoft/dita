@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<reference id="theconrefendattribute" xml:lang="en-us">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="theconrefendattribute" xml:lang="en-us">
   <title>The <xmlatt>conrefend</xmlatt> attribute</title>
   <shortdesc>The <xmlatt>conrefend</xmlatt> attribute is used when referencing a range of elements
     with the conref mechanism. The <xmlatt>conref</xmlatt> or <xmlatt>conkeyref</xmlatt> attribute
@@ -13,7 +13,7 @@
       </keywords>
     </metadata>
   </prolog>
-  <refbody>
+  <conbody>
     <section id="section-1"><title>Using <xmlatt>conref</xmlatt> together with
           <xmlatt>conrefend</xmlatt></title>
       <p>The following markup rules apply when using or implementing <xmlatt>conrefend</xmlatt>:<ul>
@@ -74,5 +74,5 @@
         the <xmlatt>conref</xmlatt> attribute itself is not present for fallback, the
           <xmlatt>conrefend</xmlatt> attribute is ignored.</p>
     </section>
-  </refbody>
-</reference>
+  </conbody>
+</concept>

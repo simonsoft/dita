@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<reference id="usingthe-dita-use-conref-targetvalue" xml:lang="en-us">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="usingthe-dita-use-conref-targetvalue" xml:lang="en-us">
   <title>Using the <keyword>-dita-use-conref-target</keyword> value</title>
   <shortdesc>The value <keyword>-dita-use-conref-target</keyword> is available on enumerated
     attributes and can also be specified on other attributes. When an element uses
@@ -15,14 +15,13 @@
       </keywords>
     </metadata>
   </prolog>
-  <refbody>
-    <section id="section_nwl_xxy_qpb">
+  <conbody>
       <draft-comment author="robander" time="19 May 2021">This topic is moving into the arch spec,
         but needs further editing to split overview / conceptual info from processing info; this and
         other conref-attribute topics currently have a bunch of processing info that is missing from
         the actual "Processing conref" arch spec topics.</draft-comment>
-    </section>
-    <section id="section-1"><p>Ordinarily, when an element uses <xmlatt>conref</xmlatt>, any other
+    
+      <p>Ordinarily, when an element uses <xmlatt>conref</xmlatt>, any other
         attributes specified locally will be preserved when the reference is resolved. This causes
         problems when attributes are required, because required attributes must be specified
         regardless of whether the <xmlatt>conref</xmlatt> attribute is present. The purpose of the
@@ -37,7 +36,7 @@
         <xmlelement>tgroup</xmlelement>. However, the token is not allowed for the
           <xmlatt>id</xmlatt> attribute on the <xmlelement>topic</xmlelement> element, because
         "-dita-use-conref-target" does not fit the syntax required by the XML grammar
-      files.</p></section>
+      files.</p>
     <example id="example" otherprops="examples">
       <p>This example shows a DITA map where the <xmlelement>topichead</xmlelement> element uses
           <xmlatt>conref</xmlatt>. It specifies the <xmlatt>deliveryTarget</xmlatt> attribute as
@@ -90,5 +89,5 @@
 </codeblock>
       </fig>
     </example>
-  </refbody>
-</reference>
+  </conbody>
+</concept>
