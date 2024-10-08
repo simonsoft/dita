@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="conref" xml:lang="en-us">
- <title><ph >Conref overview</ph></title>
+ <title><ph rev="review-ella">Content referencing</ph> overview</title>
  <shortdesc><ph conkeyref="reuse-general/conref-shortdesc"/></shortdesc>
   <prolog>
     <metadata>
@@ -18,17 +18,18 @@
       as defined in <xref href="linking-and-addressing-terms.dita"/>.</p>
     <dl>
       <dlentry>
-        <dt>Pulling content to the referencing element</dt>
+        <dt>Pulling content <ph rev="review-ella">into</ph> the referencing element</dt>
         <dd>
           <p>When the <xmlatt>conref</xmlatt> or <xmlatt>conkeyref</xmlatt> attribute is used alone,
-            the referencing element acts as a placeholder for the referenced element, and the
-            content of the referenced element is rendered in place of the referencing element.</p>
+            the referencing element acts as a placeholder for the referenced <ph rev="review-ella"
+              >element. The</ph> content of the referenced element is rendered in place of the
+            referencing element.</p>
           <p>The combination of the <xmlatt>conrefend</xmlatt> attribute with either
               <xmlatt>conref</xmlatt> or <xmlatt>conkeyref</xmlatt> specifies a range of elements
-            that is rendered in place of the referencing element. <ph >Although
-              the start and end elements must be of the same type as the referencing element (or
-              specialized from that element type), the elements inside the range can be any
-              type.</ph></p>
+            that is rendered in place of the referencing element. <ph rev="review-ella">The start
+              and end elements in a range must be siblings.</ph> Although the start and end elements
+            must be of the same type as the referencing element (or specialized from that element
+            type), the elements inside the range can be any type.</p>
         </dd>
       </dlentry>
       <dlentry>
