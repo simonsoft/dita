@@ -13,7 +13,7 @@
 <refbody>
     <section id="rendering-expectations" rev="rendering">
       <title>Rendering expectations</title>
-      <p>The content of the <xmlelement>cite</xmlelement>element is
+      <p>The content of the <xmlelement>cite</xmlelement> element is
         typically rendered in a way that distinguishes it from the
         surrounding text.</p>
     </section>
