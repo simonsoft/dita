@@ -603,10 +603,9 @@
         </dlentry>
         <dlentry platform="dita lwdita" id="keys">
           <dt id="attr-keys"><xmlatt>keys</xmlatt></dt>
-          <dd>Specifies one or more names for a resource.<ph
-              platform="dita"> See <xref keyref="attributes-keys"/> for
-              information on using this attribute.</ph><p platform="dita"
-              >For HDITA, the equivalent of <xmlatt>keys</xmlatt> is
+          <dd>Specifies one or more names for a resource.<ph platform="dita"> See <xref
+                keyref="attributes-keys"/> for information on using this attribute.</ph><p
+              platform="lwdita">For HDITA, the equivalent of <xmlatt>keys</xmlatt> is
                 <xmlatt>data-keys</xmlatt>
             </p></dd>
         </dlentry>
