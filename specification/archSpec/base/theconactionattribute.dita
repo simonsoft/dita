@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
  "concept.dtd">
 <concept id="theconactionattribute" xml:lang="en-us">
-<title>The <xmlatt>conaction</xmlatt> attribute</title>
+<title rev="review-ella">Pushing reusable content to a new location</title>
 <shortdesc>The <xmlatt>conaction</xmlatt> attribute allows users to push content from one location
     into another. It causes the <xmlatt>conref</xmlatt> attribute to work in reverse, so that
     content is pushed from the referencing element into another location, rather than pulled from
@@ -16,18 +16,24 @@
   </prolog>
 <conbody>
 <note>In the descriptions below, the word <i>target</i> always refers to the element referenced by a
-          <xmlatt>conref</xmlatt> attribute.</note><p>There are three possible functions using the <xmlatt>conaction</xmlatt> attribute: replacing an
-        element, pushing content before an element, and pushing content after an element. The
-          <xmlatt>conaction</xmlatt> attribute always declares the desired function while the
-          <xmlatt>conref</xmlatt> attribute provides the target of the reference using the standard
-          <xmlatt>conref</xmlatt> syntax.</p><p>In each case, an element pushed using <xmlatt>conref</xmlatt> must be of the same type as, or
-        more specialized than, its target. If the pushed element is more specialized than the
-        target, then it should be generalized when the <xmlatt>conref</xmlatt> is resolved. This
-        ensures that the content will be valid in the target topic.</p><ul>
-<li>It is valid to push using <xmlatt>conref</xmlatt> when the two elements involved are of the same
-          type. For example, a <xmlelement>step</xmlelement> element can use the conref push feature
-          with another <xmlelement>step</xmlelement> as the target of the
-          <xmlatt>conref</xmlatt>.</li>
+        <xmlatt>conref</xmlatt>
+      <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> attribute.</note><p>There are three possible functions using the <xmlatt>conaction</xmlatt> attribute: replacing an
+      element, pushing content before an element, <ph rev="review-ella">or</ph> pushing content
+      after an element. The <xmlatt>conaction</xmlatt> attribute always declares the desired
+      function while the <xmlatt>conref</xmlatt>
+      <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> attribute provides the target of the
+      reference <ph rev="review-ella">using standard syntax for that attribute</ph>.</p><p>In each case, an element pushed using <xmlatt>conref</xmlatt>
+      <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph>must be of the same type as, or more
+      specialized than, its target. If the pushed element is more specialized than the target, then
+      it should be generalized when the <xmlatt>conref</xmlatt>
+      <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> is resolved. This ensures that the
+      content will be valid in the target topic.</p><ul>
+<li>It is valid to push using <xmlatt>conref</xmlatt>
+        <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> when the two elements involved are
+        of the same type. For example, a <xmlelement>step</xmlelement> element can use the conref
+        push feature with another <xmlelement>step</xmlelement> as the target of the
+          <xmlatt>conref</xmlatt>
+        <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph>.</li>
 <li>The target element can be more general than the source. For example, it is legal to push a
             <xmlelement>step</xmlelement> element to replace a general list item
             (<xmlelement>li</xmlelement>); the <xmlelement>step</xmlelement> element should be
@@ -41,14 +47,17 @@
       <title>Replacing content in another topic</title>
       <p>When the <xmlatt>conaction</xmlatt> attribute is set to <keyword>pushreplace</keyword>, the
         referencing element will replace the referenced element specified by the
-          <xmlatt>conref</xmlatt> attribute. The pushed content remains in the source topic where it
-        was originally authored.</p>
+          <xmlatt>conref</xmlatt>
+        <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> attribute. The pushed content
+        remains in the source topic where it was originally authored.</p>
       <p>When resolving a conref push action, attributes are resolved using the same precedence as
         for normal <xmlatt>conref</xmlatt>, with one exception. Attributes on the element with the
-          <xmlatt>conref</xmlatt> attribute (in this case, the source doing the push) will take
-        priority over those on the referenced element. The exception is that if the source element
-        does not specify an ID, the ID on the referenced element remains; if the source element does
-        specify an ID then that replaces the ID on the referenced element.</p>
+          <xmlatt>conref</xmlatt>
+        <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> attribute (in this case, the source
+        doing the push) will take priority over those on the referenced element. The exception is
+        that if the source element does not specify an ID, the ID on the referenced element remains;
+        if the source element does specify an ID then that replaces the ID on the referenced
+        element.</p>
       <p outputclass="errorcondition">It is an error for two source topics to replace the same
         element. Applications <term outputclass="RFC-2119">MAY</term> warn users if more than one
         element attempts to replace a single target.</p>
@@ -56,11 +65,13 @@
 <section id="pushing-content">
       <title>Pushing content before or after another element</title>
       <p>Setting the <xmlatt>conaction</xmlatt> attribute to <keyword>pushbefore</keyword> allows an
-        element to be pushed before the element referenced by the <xmlatt>conref</xmlatt> attribute.
-        Likewise, setting the <xmlatt>conaction</xmlatt> attribute to <keyword>pushafter</keyword>
-        allows an element to be pushed after the element referenced by the <xmlatt>conref</xmlatt>
-        attribute. Multiple sources can push content before or after the same referenced element;
-        the order in which that content is pushed is undefined.</p>
+        element to be pushed before the element referenced by the <xmlatt>conref</xmlatt>
+        <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> attribute. Likewise, setting the
+          <xmlatt>conaction</xmlatt> attribute to <keyword>pushafter</keyword> allows an element to
+        be pushed after the element referenced by the <xmlatt>conref</xmlatt>
+        <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> attribute. Multiple sources can
+        push content before or after the same referenced element; the order in which that content is
+        pushed is undefined.</p>
       <p>When an element is pushed before or after a referenced element, the resulting document will
         have at least two of that element. Because this is not always valid, a document attempting
         to push content before or after a target must take an extra step to ensure that the result
@@ -69,13 +80,14 @@
           <xmlelement>body</xmlelement> element before or after another
           <xmlelement>body</xmlelement> element, because it is not valid to have two body elements
         in sequence.</p>
-      <p>When pushing before, the <xmlatt>conref</xmlatt> attribute itself looks just as it did when
-        replacing, but the <xmlatt>conaction</xmlatt> attribute is set to <keyword>mark</keyword>
-        because it is marking the referenced element. This element remains empty; its purpose is to
-        ensure that it is legal to have more than one of the current element. The element
-        immediately before the marking element is the content that will actually be pushed. This
-        element will set the <xmlatt>conaction</xmlatt> attribute to
-        <keyword>pushbefore</keyword>.</p>
+      <p>When pushing before, the <xmlatt>conref</xmlatt>
+        <ph rev="review-ella">or <xmlatt>conkeyref</xmlatt></ph> attribute itself looks just as it
+        did when replacing, but the <xmlatt>conaction</xmlatt> attribute is set to
+          <keyword>mark</keyword> because it is marking the referenced element. This element remains
+        empty; its purpose is to ensure that it is legal to have more than one of the current
+        element. The element immediately before the marking element is the content that will
+        actually be pushed. This element will set the <xmlatt>conaction</xmlatt> attribute to
+          <keyword>pushbefore</keyword>.</p>
       <p>When pushing after, the procedure is the same, except that the order of the elements is
         reversed. The element with <codeph>conaction="pushafter"</codeph> comes immediately after
         the element which marks the target.</p>
