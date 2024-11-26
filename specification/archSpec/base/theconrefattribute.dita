@@ -2,9 +2,10 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
  "concept.dtd">
 <concept id="theconrefattribute" xml:lang="en-us">
-<title>The <xmlatt>conref</xmlatt> attribute</title>
-<shortdesc>The <xmlatt>conref</xmlatt> attribute is used to reference content that can be reused. It
-    allows reuse of DITA elements, including topic or map level elements.</shortdesc>
+<title rev="review-ella">Direct URI-based content reuse</title>
+<shortdesc>The <xmlatt>conref</xmlatt> attribute is used to reference <ph rev="review-ella">reusable
+      content by URI</ph>. It allows reuse of DITA elements, including <ph rev="review-ella">topic-
+      or map-based elements</ph>.</shortdesc>
   <prolog>
     <metadata>
       <keywords>

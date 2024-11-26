@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="theconrefendattribute" xml:lang="en-us">
-  <title>The <xmlatt>conrefend</xmlatt> attribute</title>
-  <shortdesc>The <xmlatt>conrefend</xmlatt> attribute is used when referencing a range of elements
-    with the conref mechanism. The <xmlatt>conref</xmlatt> or <xmlatt>conkeyref</xmlatt> attribute
-    references the first element in the range, while <xmlatt>conrefend</xmlatt> references the last
-    element in the range. </shortdesc>
+  <title rev="review-ella">Reusing a range of elements</title>
+  <shortdesc rev="review-ella">The <xmlatt>conrefend</xmlatt> attribute is used in a conref range. A
+      <xmlatt>conref</xmlatt> or <xmlatt>conkeyref</xmlatt> attribute references the first element
+    in the range, while <xmlatt>conrefend</xmlatt> references the last element in the range. </shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -24,14 +23,16 @@
             the same parent, and the start element <term outputclass="RFC-2119">MUST</term> precede
             the end element in document order.</li>
           <li>The parent of the referencing element <term outputclass="RFC-2119">MUST</term> be the
-            same as the parent of the referenced range or generalizable to the parent of the
-            referencing element.
+            same <ph rev="review-ella">type</ph> as the parent of the referenced range or
+            generalizable to the parent of the referencing element.
             <!--For example, it is possible to pull a range from <xmlelement>conbody</xmlelement> into <xmlelement>body</xmlelement>, because <xmlelement>conbody</xmlelement> is generalizable to <xmlelement>body</xmlelement>. It is not possible to pull a range from <xmlelement>body</xmlelement> into <xmlelement>conbody</xmlelement>, because the result <ph>might</ph> not be valid in <xmlelement>conbody</xmlelement>.--></li>
         </ul></p><p>In addition, several other items must be taken into account:</p><ul>
         <li>Processors will resolve the range by pulling in the starting referenced element and
-          following sibling XML nodes across to and including the ending referenced element.</li>
-        <li>As with <xmlatt>conref</xmlatt>, if the <xmlatt>conrefend</xmlatt> references a more
-          specialized version of the referencing element, applications should generalize the target
+          following sibling XML nodes <ph rev="review-ella">up</ph> to and including the ending
+          referenced element.</li>
+        <li>As with <xmlatt>conref</xmlatt>, if the <xmlatt>conrefend</xmlatt>
+          <ph rev="review-ella">attribute</ph> references a more specialized version of the
+          referencing element, applications <ph rev="review-ella">can</ph> generalize the target
           when resolving.</li>
         <li>As with <xmlatt>conref</xmlatt>, it is not valid to use <xmlatt>conrefend</xmlatt> to
           reference a more general version of an element (such as using
