@@ -38,18 +38,16 @@
       attribute with the "-dita-use-conref-target" value, that element <term outputclass="RFC-2119"
         >MUST</term> be treated as equivalent to having that attribute unspecified.</p>
   <p>A given attribute value on the resolved element comes in its entirety from either the
-   referencing element or the referenced element; the attribute values of the referencing and
-   referenced elements for a given attribute are never additive, even if the property (such as
-    <xmlatt>audience</xmlatt>) takes a list of values.</p>
-    <draft-comment author="Kristen J Eberlein" time="04 July 2019" audience="tc-reviewers">
-      <p>Do we want the following paragraph to contain normative RFC-2119 wording?</p>
-    </draft-comment>
+      referencing element or the referenced <ph rev="review-ella">element. The</ph> attribute values
+      of the referencing and referenced elements for a given attribute are never additive, even if
+      the property (such as <xmlatt>audience</xmlatt>) takes a list of values.</p>
     <!--IGNORE may-must-should word-->
-  <p>If the referenced element has a <xmlatt>conref</xmlatt> attribute specified, the above rules
-   should be applied recursively with the resolved element from one referencing/referenced
-   combination becoming one of the two elements participating in the next referencing/referenced
-   combination. The result should preserve without generalization all elements that are valid in the
-   originating context, even if they are not valid in an intermediate context. </p>
+  <p>If the referenced element has a <ph rev="review-ella">content referencing</ph> attribute
+      specified, the above rules <term outputclass="RFC-2119" rev="review-ella">MUST</term> be
+      applied recursively with the resolved element from one referencing/referenced combination
+      becoming one of the two elements participating in the next referencing/referenced combination.
+      The result should preserve without generalization all elements that are valid in the
+      originating context, even if they are not valid in an intermediate context. </p>
   <p otherprops="examples">For example, if topic A and topic C allow highlighting, and topic B does
       not, then a content reference chain of topic A-to-topic B-to-topic C should preserve any
       highlighting elements in the referenced content. The result, however it is achieved, is

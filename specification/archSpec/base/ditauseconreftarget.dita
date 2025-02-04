@@ -2,11 +2,9 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="usingthe-dita-use-conref-targetvalue" xml:lang="en-us">
   <title>Using the <keyword>-dita-use-conref-target</keyword> value</title>
-  <shortdesc>The value <keyword>-dita-use-conref-target</keyword> is available on enumerated
-    attributes and can also be specified on other attributes. When an element uses
-      <xmlatt>conref</xmlatt> to pull in content, for any of its attributes assigned a value of
-      <keyword>-dita-use-conref-target</keyword>, the resulting value for those attributes is also
-    pulled in from the referenced element.</shortdesc>
+  <shortdesc>When an element uses <xmlatt>conref</xmlatt> to pull in content, for any of its
+    attributes assigned a value of <keyword>-dita-use-conref-target</keyword>, the resulting value
+    for those attributes is also pulled in from the referenced element.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -16,10 +14,6 @@
     </metadata>
   </prolog>
   <conbody>
-      <draft-comment author="robander" time="19 May 2021">This topic is moving into the arch spec,
-        but needs further editing to split overview / conceptual info from processing info; this and
-        other conref-attribute topics currently have a bunch of processing info that is missing from
-        the actual "Processing conref" arch spec topics.</draft-comment>
     
       <p>Ordinarily, when an element uses <xmlatt>conref</xmlatt>, any other
         attributes specified locally will be preserved when the reference is resolved. This causes
@@ -37,57 +31,5 @@
           <xmlatt>id</xmlatt> attribute on the <xmlelement>topic</xmlelement> element, because
         "-dita-use-conref-target" does not fit the syntax required by the XML grammar
       files.</p>
-    <example id="example" otherprops="examples">
-      <p>This example shows a DITA map where the <xmlelement>topichead</xmlelement> element uses
-          <xmlatt>conref</xmlatt>. It specifies the <xmlatt>deliveryTarget</xmlatt> attribute as
-        well as the <xmlatt>toc</xmlatt> attribute. In the resolved element,
-          <xmlatt>deliveryTarget</xmlatt> from the referencing element is not preserved because it
-        uses <keyword>-dita-use-conref-target</keyword>. The <xmlatt>toc</xmlatt> attribute from the
-        referencing element overrides the <xmlatt>toc</xmlatt> attribute on the referenced element
-        using normal conref resolution rules.</p>
-      <fig id="example-fig1">
-        <title>Before resolution</title>
-        <codeblock>&lt;map>&lt;title>Conref demonstration&lt;/title>
-  &lt;topichead id="heading"
-             deliveryTarget="pdf"
-             toc="yes"
-             linking="normal">
-    &lt;topicmeta>
-       &lt;navtitle>This is a heading&lt;/navtitle>
-    &lt;/topicmeta>
-    &lt;topicref href="topic.dita"/>
-  &lt;/topichead>
-
-  &lt;topichead conref="#heading"
-             deliveryTarget="-dita-use-conref-target"
-             toc="no">
-  &lt;/topichead>
-&lt;/map></codeblock>
-      </fig>
-      <fig id="example-fig2">
-        <title>Effective result post-resolution</title>
-        <codeblock>&lt;map>&lt;title>Conref demonstration&lt;/title>
-  &lt;topichead id="heading"
-             deliveryTarget="pdf"
-             toc="yes"
-             linking="normal">
-    &lt;topicmeta>
-       &lt;navtitle>This is a heading&lt;/navtitle>
-    &lt;/topicmeta>
-    &lt;topicref href="topic.dita"/>
-  &lt;/topichead>
-
-  &lt;topichead deliveryTarget="pdf"
-             toc="no"
-             linking="normal">
-    &lt;topicmeta>
-       &lt;navtitle>This is a heading&lt;/navtitle>
-    &lt;/topicmeta>
-    &lt;topicref href="topic.dita"/>
-  &lt;/topichead>
-&lt;/map>
-</codeblock>
-      </fig>
-    </example>
   </conbody>
 </concept>

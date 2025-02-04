@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="usingthe-dita-use-conref-targetvalue" xml:lang="en-us" rev="review-ella">
+  <title>Example: Using the <keyword>-dita-use-conref-target</keyword> value</title>
+  <shortdesc>In this scenario, an element in a map is reused, with some of the attributes resolved
+    using the <keyword>-dita-use-conref-target</keyword> token.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>conref attributes<indexterm>values,
+            <keyword>-dita-use-conref-target</keyword></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Consider the following scenario, where a <xmlelement>topichead</xmlelement> element in a DITA
+      map uses <xmlatt>conref</xmlatt>. It specifies the <xmlatt>deliveryTarget</xmlatt> attribute
+      as well as the <xmlatt>toc</xmlatt> attribute.</p>
+    <codeblock id="codeblock_slf_tdn_g2c">&lt;map>&lt;title>Conref demonstration&lt;/title>
+  &lt;topichead id="heading"
+             deliveryTarget="pdf"
+             toc="yes"
+             linking="normal">
+    &lt;topicmeta>
+       &lt;navtitle>This is a heading&lt;/navtitle>
+    &lt;/topicmeta>
+    &lt;topicref href="topic.dita"/>
+  &lt;/topichead>
+
+  &lt;topichead conref="#heading"
+             deliveryTarget="-dita-use-conref-target"
+             toc="no">
+  &lt;/topichead>
+&lt;/map></codeblock>
+    <p>When the content reference is resolved, the <xmlatt>deliveryTarget</xmlatt> attribute from
+      the referencing element is not preserved because it uses
+        <keyword>-dita-use-conref-target</keyword>. Instead, it uses the value
+        <keyword>pdf</keyword> from the referenced element. The <xmlatt>linking</xmlatt> attribute,
+      which is not specified on the referencing element, is also resolved based on the referenced
+      element. The <xmlatt>toc</xmlatt> attribute from the referencing element overrides the
+        <xmlatt>toc</xmlatt> attribute on the referenced element using normal conref resolution
+      rules:</p>
+    <codeblock id="codeblock_zvs_ydn_g2c">&lt;map>&lt;title>Conref demonstration&lt;/title>
+  &lt;topichead id="heading"
+             deliveryTarget="pdf"
+             toc="yes"
+             linking="normal">
+    &lt;topicmeta>
+       &lt;navtitle>This is a heading&lt;/navtitle>
+    &lt;/topicmeta>
+    &lt;topicref href="topic.dita"/>
+  &lt;/topichead>
+
+  &lt;topichead deliveryTarget="pdf"
+             toc="no"
+             linking="normal">
+    &lt;topicmeta>
+       &lt;navtitle>This is a heading&lt;/navtitle>
+    &lt;/topicmeta>
+    &lt;topicref href="topic.dita"/>
+  &lt;/topichead>
+&lt;/map>
+</codeblock>
+  </conbody>
+</concept>

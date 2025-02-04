@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="examples-conref">
-    <title>Examples of conref</title>
+    <title>Examples of content referencing</title>
     <shortdesc>This section contains examples and scenarios that illustrate the use and processing
-        of <xmlatt>conref</xmlatt> and related content-referencing attributes.</shortdesc>
+        of <xmlatt>conref</xmlatt>, <xmlatt>conkeyref</xmlatt>, and related content-referencing
+        attributes.</shortdesc>
 </concept>
