@@ -8,9 +8,10 @@
   <topicref keyref="attributes-conkeyref"/>
   <topicref keyref="attributes-conrefend"/>
     <topicref keyref="attributes-conaction"/>
-    <topicref keyref="attributes-useconreftarget"/>
     <topicref href="conref-processing.dita"/>
-    <topicref href="conref-attributes-specified-on-elements.dita"/>
+    <topicref href="conref-attributes-specified-on-elements.dita">
+   <topicref keyref="attributes-useconreftarget"/>
+  </topicref>
     <topicref href="handling-xref-and-conref-within-topics.dita"/>
   <topicref href="examples-conref.dita">
    <topicref href="example-conref-simple.dita"/>
@@ -23,6 +24,7 @@
    <topicref href="example-conref-conaction-pushafter.dita"/>
    <topicref href="example-conref-includes-xref.dita"/>
    <topicref href="example-conref-includes-xref-and-keyscope.dita"/>
+   <topicref href="example-conref-ditauseconreftarget.dita"/>
   </topicref>
   </topicref>
  <reltable title="Source&lt;-->Target">
@@ -47,6 +49,7 @@
    </relcell>
    <relcell>
     <topicref keyref="attributes-useconreftarget"/>
+    <topicref href="example-conref-ditauseconreftarget.dita"/>
    </relcell>
   </relrow>
   <relrow>
@@ -55,6 +58,14 @@
    </relcell>
    <relcell>
     <topicref href="example-keys-conref-redirection.dita"/>
+   </relcell>
+  </relrow>
+  <relrow>
+   <relcell>
+    <topicref keyref="attributes-useconreftarget"/>
+   </relcell>
+   <relcell>
+    <topicref href="example-conref-ditauseconreftarget.dita"/>
    </relcell>
   </relrow>
  </reltable>

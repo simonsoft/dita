@@ -18,18 +18,17 @@
   </metadata>
  </prolog>
  <conbody>
-  <note>The DITA <xmlatt>conref</xmlatt> attribute is a transclusion mechanism similar to XInclude
-      and to HyTime value references. DITA differs from these mechanisms, however, in that conref
-      validity does not apply simply to the current content at the time of replacement, but to the
-      possible resolved content given the restrictions of both the referencing document type and the
-      referenced document type.</note>
+  <note>The DITA <xmlatt>conref</xmlatt> attribute is a transclusion mechanism similar to <ph
+        rev="review-ella">XML XInclude</ph>. DITA differs from these mechanisms, however, in that
+      conref validity does not apply simply to the current content at the time of replacement, but
+      to the possible resolved content given the restrictions of both the referencing document type
+      and the referenced document type.</note>
    <p>When content is reused between two documents with different domains or constraints, it is
       possible for the reused content to include domain extensions that are not defined for the new
-      context, or to include elements that would be constrained out of the new context. When pulling
-      or pushing content with the conref mechanism, processors resolving conrefs <term
-        outputclass="RFC-2119">SHOULD</term> tolerate specializations of valid elements. Processors
-        <term outputclass="RFC-2119">MAY</term> generalize elements in the pushed or pulled content
-      fragment as needed for the resolving context.</p>
+      context, or to include elements that would be constrained out of the new context. <ph
+        rev="review-ella">When pulling or pushing content with the conref mechanism, processors
+        resolving conrefs can can optionally generalize specializations as needed for the resolving
+        context.</ph></p>
   <p>A conref processor <term outputclass="RFC-2119">SHOULD NOT</term> permit resolution of a reuse
       relationship that could be rendered invalid under the rules of either the reused or reusing
       content.</p>
@@ -81,7 +80,8 @@
             <row>
               <entry colname="col1">An element has a <xmlatt>conrefend</xmlatt> attribute but is
                 missing the <xmlatt>conref</xmlatt> attribute.</entry>
-              <entry colname="col2">No result.</entry>
+              <entry colname="col2"><ph rev="review-ella">The <xmlatt>conrefend</xmlatt> attribute
+                  is ignored.</ph></entry>
             </row>
           </tbody>
         </tgroup>
